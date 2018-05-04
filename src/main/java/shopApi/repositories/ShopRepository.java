@@ -13,4 +13,6 @@ public interface ShopRepository {
     void save(Customer customer);
 
     void remove(Customer customer);
+
+    void update(Customer customer);
 }

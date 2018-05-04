@@ -46,4 +46,9 @@ public class ShopRepositoryPostgreSql implements ShopRepository {
             connection.createQuery(query).executeUpdate();
         }
     }
+
+    @Override
+    public void update(Customer customer) {
+
+    }
 }
