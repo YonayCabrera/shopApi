@@ -28,6 +28,14 @@ public class ShopRepositoryPostgreSql implements ShopRepository {
 
     @Override
     public void save(Customer customer) {
-
+        final String query = "INSERT INTO customers(id,name, surname, image)" +
+                " VALUES (:id, :name, :surname, :image)";
+        try (Connection connection = sql2o.open()) {
+            connection.createQuery(query)
+                    .addParameter("id", customer.getId())
+                    .addParameter("name", customer.getName())
+                    .addParameter("surname", customer.getSurname())
+                    .addParameter("image", customer.getImage()).executeUpdate();
+        }
     }
 }

@@ -37,6 +37,15 @@ public class ShopRepositoryShould extends BaseRepositoryShould{
         assertThat(customer.getName()).isEqualTo(customers.get(0).getName());
     }
 
+    @Test
+    public void save_one_customer(){
+        shopRepository.save(customer);
+
+        Customer newCustomer = getAllCustomers();
+
+        assertThat(newCustomer).isEqualTo(customer);
+    }
+
     private void insertCustomer(Customer customer) {
         try (Connection connection = this.connection.open()) {
             connection.createQuery("INSERT INTO customers(id,name, surname, image)" +
@@ -45,6 +54,14 @@ public class ShopRepositoryShould extends BaseRepositoryShould{
                     .addParameter("name", customer.getName())
                     .addParameter("surname", customer.getSurname())
                     .addParameter("image", customer.getImage()).executeUpdate();
+        }
+    }
+
+    private Customer getAllCustomers(){
+        try (Connection connection = this.connection.open()) {
+            return connection.createQuery("Select * from customers")
+                    .executeAndFetch(Customer.class)
+                    .get(0);
         }
     }
 }
