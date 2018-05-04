@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BaseRepositoryShould {
-    private static String productionDb = "shop";
+    private static String productionDb = "shopDB";
     protected static String dbUser = "batman";
     protected static String dbPassword = "alfred";
     protected static String testDb = "test_shop";

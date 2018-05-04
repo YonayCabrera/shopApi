@@ -10,7 +10,7 @@ import shopApi.repositories.ShopRepositoryPostgreSql;
 
 @Configuration
 public class PersistenceConfiguration {
-    @Value("jdbc:postgresql://localhost:5432/shop")
+    @Value("jdbc:postgresql://localhost:5432/shopDB")
     private String connection;
 
     @Bean

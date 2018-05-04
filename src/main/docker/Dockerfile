@@ -1,0 +1,11 @@
+FROM postgres
+
+MAINTAINER Yonay Cabrera <yonaycl@gmail.com>
+
+ENV POSTGRES_DB shopDB
+ENV POSTGRES_USER batman
+ENV POSTGRES_PASSWORD alfred
+
+WORKDIR /shopDB
+
+EXPOSE 5432
