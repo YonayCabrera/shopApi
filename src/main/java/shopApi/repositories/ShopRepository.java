@@ -1,9 +1,12 @@
 package shopApi.repositories;
 
 import org.springframework.stereotype.Repository;
+import shopApi.domains.Customer;
+
+import java.util.List;
 
 @Repository
 public interface ShopRepository {
 
-    void getAllCustomers();
+    List<Customer> getAllCustomers();
 }
