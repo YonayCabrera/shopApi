@@ -3,10 +3,10 @@ package shopApi.services;
 import shopApi.domains.Customer;
 import shopApi.repositories.ShopRepository;
 
-public class CreateCustomer {
+public class CreateCustomerService {
     private ShopRepository shopRepository;
 
-    public CreateCustomer(ShopRepository shopRepository) {
+    public CreateCustomerService(ShopRepository shopRepository) {
         this.shopRepository = shopRepository;
     }
 

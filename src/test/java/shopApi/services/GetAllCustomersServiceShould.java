@@ -6,7 +6,7 @@ import shopApi.repositories.ShopRepository;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class GetAllCustomersShould {
+public class GetAllCustomersServiceShould {
     private ShopRepository shopRepository;
     private GetAllCustomersService getAllCustomersService;
 

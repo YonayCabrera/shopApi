@@ -38,4 +38,9 @@ public class ShopRepositoryPostgreSql implements ShopRepository {
                     .addParameter("image", customer.getImage()).executeUpdate();
         }
     }
+
+    @Override
+    public void remove(Customer customer) {
+
+    }
 }

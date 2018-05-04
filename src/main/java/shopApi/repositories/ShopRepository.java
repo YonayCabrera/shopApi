@@ -11,4 +11,6 @@ public interface ShopRepository {
     List<Customer> getAllCustomers();
 
     void save(Customer customer);
+
+    void remove(Customer customer);
 }
