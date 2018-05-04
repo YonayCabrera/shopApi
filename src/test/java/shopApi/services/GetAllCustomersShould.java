@@ -8,14 +8,14 @@ import static org.mockito.Mockito.verify;
 
 public class GetAllCustomersShould {
     private ShopRepository shopRepository;
-    private GetAllCustomers getAllCustomers;
+    private GetAllCustomersService getAllCustomersService;
 
     @Test
     public void get_all_customers(){
         shopRepository = mock(ShopRepository.class);
-        getAllCustomers = new GetAllCustomers(shopRepository);
+        getAllCustomersService = new GetAllCustomersService(shopRepository);
 
-        getAllCustomers.execute();
+        getAllCustomersService.execute();
 
         verify(shopRepository).getAllCustomers();
     }

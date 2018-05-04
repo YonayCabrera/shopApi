@@ -2,10 +2,10 @@ package shopApi.services;
 
 import shopApi.repositories.ShopRepository;
 
-public class GetAllCustomers {
+public class GetAllCustomersService {
     private ShopRepository shopRepository;
 
-    public GetAllCustomers(ShopRepository shopRepository) {
+    public GetAllCustomersService(ShopRepository shopRepository) {
         this.shopRepository = shopRepository;
     }
 
