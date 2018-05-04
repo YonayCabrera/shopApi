@@ -11,10 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BaseRepositoryShould {
-    private static String productionDb = "shopDB";
+    private static String productionDb = "shoptheam";
     protected static String dbUser = "batman";
     protected static String dbPassword = "alfred";
-    protected static String testDb = "test_shop";
+    protected static String testDb = "test_shoptheam";
     protected static String connectionBaseUrl = "jdbc:postgresql://localhost:5432/";
     protected static String connectionTestDatabase = connectionBaseUrl + testDb + "?user=" + dbUser + "&password=" + dbPassword;
 

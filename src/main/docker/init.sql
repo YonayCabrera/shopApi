@@ -1,0 +1,7 @@
+CREATE TABLE customers
+(
+  ID SERIAL PRIMARY KEY NOT NULL,
+  image TEXT NOT NULL,
+  name TEXT NOT NULL,
+  surname TEXT NOT NULL
+);
