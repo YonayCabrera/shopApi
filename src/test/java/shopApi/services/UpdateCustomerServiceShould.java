@@ -26,9 +26,14 @@ public class UpdateCustomerServiceShould {
                 "yonay",
                 "cabrera",
                 "image.jpg");
+        Customer newCustomer = new Customer(
+                1,
+                "jose",
+                "deniz",
+                "image.jpg");
 
-        updateCustomerService.execute(customer);
+        updateCustomerService.execute(customer.getId(),newCustomer);
 
-        verify(shopRepository).update(customer);
+        verify(shopRepository).update(customer.getId(), newCustomer);
     }
 }

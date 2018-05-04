@@ -14,5 +14,5 @@ public interface ShopRepository {
 
     void remove(Customer customer);
 
-    void update(Customer customer);
+    void update(int id, Customer customer);
 }

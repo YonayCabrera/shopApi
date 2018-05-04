@@ -11,7 +11,7 @@ public class UpdateCustomerService {
         this.shopRepository = shopRepository;
     }
 
-    public void execute(Customer customer) {
-        shopRepository.update(customer);
+    public void execute(int id, Customer customer) {
+        shopRepository.update(id, customer);
     }
 }
