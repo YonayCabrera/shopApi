@@ -9,4 +9,6 @@ import java.util.List;
 public interface ShopRepository {
 
     List<Customer> getAllCustomers();
+
+    void save(Customer customer);
 }

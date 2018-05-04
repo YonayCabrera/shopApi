@@ -25,4 +25,9 @@ public class ShopRepositoryPostgreSql implements ShopRepository {
             return connection.createQuery(query).executeAndFetch(Customer.class);
         }
     }
+
+    @Override
+    public void save(Customer customer) {
+
+    }
 }

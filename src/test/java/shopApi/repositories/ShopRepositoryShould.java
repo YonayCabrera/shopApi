@@ -33,7 +33,7 @@ public class ShopRepositoryShould extends BaseRepositoryShould{
         insertCustomer(customer);
 
         List<Customer>customers = shopRepository.getAllCustomers();
-        System.out.println(customers);
+
         assertThat(customer.getName()).isEqualTo(customers.get(0).getName());
     }
 
