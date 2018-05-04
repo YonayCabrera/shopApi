@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36dffc34-2e15-4b80-8e4c-9adc5a6f5203" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/repositories/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/repositories/ShopRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/repositories/ShopRepositoryPostgreSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/repositories/ShopRepositoryPostgreSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/CreateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/CreateCustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/services/CreateCustomerShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/services/CreateCustomerServiceShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/services/GetAllCustomersShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/services/GetAllCustomersServiceShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/repositories/ShopRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shopApi/repositories/ShopRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/repositories/ShopRepositoryPostgreSql.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shopApi/repositories/ShopRepositoryPostgreSql.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/services/CreateCustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/shopApi/services/CreateCustomerShould.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/shopApi/services/GetAllCustomersShould.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/repositories/ShopRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/repositories/ShopRepositoryShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -97,8 +87,8 @@
       <file leaf-file-name="ShopRepositoryShould.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/repositories/ShopRepositoryShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+            <state relative-caret-position="259">
+              <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#441#442#0" expanded="true" />
@@ -108,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteCustomerServiceShould.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DeleteCustomerServiceShould.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/DeleteCustomerServiceShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state>
+              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,8 +127,8 @@
       <file leaf-file-name="CreateCustomerServiceShould.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/CreateCustomerServiceShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="660">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,11 +164,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShopRepositoryPostgreSql.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ShopRepositoryPostgreSql.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/ShopRepositoryPostgreSql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="215">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -238,12 +228,12 @@
         <option value="$PROJECT_DIR$/src/main/java/shopApi/services/GetAllCustomersService.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/services/CreateCustomer.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/services/CreateCustomerShould.java" />
-        <option value="$PROJECT_DIR$/src/test/java/shopApi/repositories/ShopRepositoryShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/domains/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/services/DeleteCustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/repositories/ShopRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/repositories/ShopRepositoryPostgreSql.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/services/DeleteCustomerServiceShould.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shopApi/repositories/ShopRepositoryShould.java" />
       </list>
     </option>
   </component>
@@ -462,7 +452,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DeleteCustomerServiceShould">
+  <component name="RunManager" selected="JUnit.All in shopApi">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -532,29 +522,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GetAllCustomersServiceShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shopApi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="shopApi.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="shopApi.services" />
-      <option name="MAIN_CLASS_NAME" value="shopApi.services.GetAllCustomersServiceShould" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration name="ShopRepositoryShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopApi" />
       <extension name="coverage">
@@ -569,6 +536,29 @@
       <option name="MAIN_CLASS_NAME" value="shopApi.repositories.ShopRepositoryShould" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ShopRepositoryShould.remove_one_customer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopApi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shopApi.repositories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="shopApi.repositories" />
+      <option name="MAIN_CLASS_NAME" value="shopApi.repositories.ShopRepositoryShould" />
+      <option name="METHOD_NAME" value="remove_one_customer" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -631,19 +621,19 @@
       <method />
     </configuration>
     <list>
-      <item itemvalue="JUnit.GetAllCustomersServiceShould" />
       <item itemvalue="JUnit.ShopRepositoryShould" />
       <item itemvalue="JUnit.All in shopApi" />
       <item itemvalue="JUnit.CreateCustomerServiceShould" />
       <item itemvalue="JUnit.DeleteCustomerServiceShould" />
+      <item itemvalue="JUnit.ShopRepositoryShould.remove_one_customer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DeleteCustomerServiceShould" />
         <item itemvalue="JUnit.All in shopApi" />
+        <item itemvalue="JUnit.ShopRepositoryShould.remove_one_customer" />
+        <item itemvalue="JUnit.DeleteCustomerServiceShould" />
         <item itemvalue="JUnit.CreateCustomerServiceShould" />
         <item itemvalue="JUnit.ShopRepositoryShould" />
-        <item itemvalue="JUnit.GetAllCustomersServiceShould" />
       </list>
     </recent_temporary>
   </component>
@@ -663,14 +653,11 @@
       <workItem from="1525423034876" duration="4377000" />
       <workItem from="1525428256327" duration="742000" />
       <workItem from="1525430054539" duration="8724000" />
-      <workItem from="1525468843785" duration="3291000" />
+      <workItem from="1525468843785" duration="3938000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShopRepositoryShould - 2018.05.04 at 14h 38m 51s.xml">
-      <configuration name="ShopRepositoryShould" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_shopApi - 2018.05.04 at 14h 39m 05s.xml">
       <configuration name="All in shopApi" configurationId="JUnit" />
     </history-entry>
@@ -698,9 +685,12 @@
     <history-entry file="DeleteCustomerServiceShould - 2018.05.04 at 23h 18m 43s.xml">
       <configuration name="DeleteCustomerServiceShould" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DeleteCustomerServiceShould - 2018.05.04 at 23h 19m 19s.xml">
+      <configuration name="DeleteCustomerServiceShould" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18200000" />
+    <option name="totallyTimeSpent" value="18847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
@@ -1111,38 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/GetAllCustomersServiceShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/repositories/ShopRepositoryShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/CreateCustomerServiceShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/ShopRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1150,13 +1108,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/ShopRepositoryPostgreSql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
@@ -1174,11 +1125,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/DeleteCustomerServiceShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state>
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/CreateCustomerServiceShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/GetAllCustomersServiceShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/repositories/ShopRepositoryShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/ShopRepositoryPostgreSql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>

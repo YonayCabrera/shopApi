@@ -41,6 +41,9 @@ public class ShopRepositoryPostgreSql implements ShopRepository {
 
     @Override
     public void remove(Customer customer) {
-
+        final String query = "DELETE FROM customers WHERE id ="+customer.getId();
+        try (Connection connection = sql2o.open()) {
+            connection.createQuery(query).executeUpdate();
+        }
     }
 }

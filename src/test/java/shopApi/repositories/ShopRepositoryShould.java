@@ -46,6 +46,21 @@ public class ShopRepositoryShould extends BaseRepositoryShould{
         assertThat(newCustomer).isEqualTo(customer);
     }
 
+    @Test
+    public void remove_one_customer(){
+        Customer otherCustomer = new Customer(
+                2,
+                "jose",
+                "déniz",
+                "image.jpg");
+        insertCustomer(customer);
+        insertCustomer(otherCustomer);
+
+        shopRepository.remove(customer);
+
+        assertThat(otherCustomer).isEqualTo(getAllCustomers());
+    }
+
     private void insertCustomer(Customer customer) {
         try (Connection connection = this.connection.open()) {
             connection.createQuery("INSERT INTO customers(id,name, surname, image)" +
