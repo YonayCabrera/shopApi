@@ -1,5 +1,6 @@
-#SHOP-API
-##POSTGRES
+# SHOP-API
+
+## POSTGRES
 
 To run your database you need install Docker 
 And do the next sentences:
