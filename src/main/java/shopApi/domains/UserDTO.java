@@ -2,7 +2,7 @@ package shopApi.domains;
 
 public class UserDTO {
     private final String name;
-    private final String password;
+    private String password;
     private final String email;
 
     public UserDTO(String name, String password, String email) {
@@ -22,5 +22,9 @@ public class UserDTO {
 
     public String getEmail() {
         return email;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
     }
 }
