@@ -1,0 +1,8 @@
+{
+  "timestamp": 1525540112406,
+  "status": 500,
+  "error": "Internal Server Error",
+  "exception": "org.sql2o.Sql2oException",
+  "message": "Could not acquire a connection from DataSource - No suitable driver found for jdbc:@{spring.datasource.url}",
+  "path": "/customers"
+}

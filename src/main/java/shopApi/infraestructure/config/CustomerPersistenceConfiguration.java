@@ -1,22 +1,25 @@
 package shopApi.infraestructure.config;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import shopApi.repositories.customerRepository.CustomerRepository;
 import shopApi.repositories.customerRepository.CustomerRepositoryPostgreSql;
+import shopApi.repositories.userRepository.UserRepository;
+import shopApi.repositories.userRepository.UserRepositoryPostgreSql;
 
 @Configuration
 public class CustomerPersistenceConfiguration {
-    @Value("jdbc:postgresql://localhost:5432/shoptheam")
+    @Value("${spring.datasource.url}")
     private String connection;
 
     @Bean
-    @Primary
-    @ConfigurationProperties(prefix = "spring.datasource")
-    public CustomerRepository dataSource(){
+    public CustomerRepository customerRepository(){
         return new CustomerRepositoryPostgreSql(connection);
+    }
+
+    @Bean
+    public UserRepository userRepository(){
+        return new UserRepositoryPostgreSql(connection);
     }
 }

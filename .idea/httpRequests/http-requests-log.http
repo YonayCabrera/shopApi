@@ -1,0 +1,32 @@
+GET http://localhost:8080/customers
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-05T060904.200.json
+
+###
+
+GET http://localhost:8080/customers
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-05T060832.500.json
+
+###
+
+GET http://localhost:8080/customers
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-05T060557.200.json
+
+###
+
+GET http://localhost:8080/customers
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-05T060516.200.json
+
+###
+
