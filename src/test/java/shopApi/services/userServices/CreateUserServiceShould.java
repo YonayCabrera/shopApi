@@ -2,7 +2,7 @@ package shopApi.services.userServices;
 
 import org.junit.Before;
 import org.junit.Test;
-import shopApi.domains.User;
+import shopApi.domains.UserDTO;
 import shopApi.repositories.userRepository.UserRepository;
 
 import static org.mockito.Mockito.mock;
@@ -21,10 +21,10 @@ public class CreateUserServiceShould {
 
     @Test
     public void add_user(){
-        User user = new User("name","password", "email");
+        UserDTO userDTO = new UserDTO("name","password", "email");
 
-        createUserService.execute(user);
+        createUserService.execute(userDTO);
 
-        verify(userRepository).createUser(user);
+        verify(userRepository).save(userDTO);
     }
 }

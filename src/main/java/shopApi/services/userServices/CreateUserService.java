@@ -1,6 +1,6 @@
 package shopApi.services.userServices;
 
-import shopApi.domains.User;
+import shopApi.domains.UserDTO;
 import shopApi.repositories.userRepository.UserRepository;
 
 public class CreateUserService {
@@ -10,7 +10,7 @@ public class CreateUserService {
         this.userRepository = userRepository;
     }
 
-    public void execute(User user) {
-        userRepository.createUser(user);
+    public void execute(UserDTO userDTO) {
+        userRepository.save(userDTO);
     }
 }

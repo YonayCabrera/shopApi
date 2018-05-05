@@ -20,14 +20,14 @@ public class CustomerRepositoryShould extends BaseRepositoryShould {
     }
 
     private Sql2o connection;
-    private CustomerRepositoryPostgreSql shopRepository;
+    private CustomerRepositoryPostgreSql customerRepository;
     private CustomerDTO customerDTO;
 
 
     @Before
     public void given_a_repository_and_a_database() {
         connection = new Sql2o(connectionTestDatabase, dbUser, dbPassword);
-        shopRepository = new CustomerRepositoryPostgreSql(connectionTestDatabase);
+        customerRepository = new CustomerRepositoryPostgreSql(connectionTestDatabase);
         customerDTO = new CustomerDTO("yonay","cabrera","aaa");
     }
 
@@ -35,14 +35,14 @@ public class CustomerRepositoryShould extends BaseRepositoryShould {
     public void get_all_customers(){
         insertCustomer(customerDTO);
 
-        List<Customer>customers = shopRepository.getAllCustomers();
+        List<Customer>customers = customerRepository.getAllCustomers();
 
         assertThat(customerDTO.getName()).isEqualTo(customers.get(0).getName());
     }
 
     @Test
     public void save_one_customer(){
-        shopRepository.save(customerDTO);
+        customerRepository.save(customerDTO);
 
         Customer newCustomer = getAllCustomers();
 
@@ -61,7 +61,7 @@ public class CustomerRepositoryShould extends BaseRepositoryShould {
         insertCustomer(otherCustomer);
 
         Customer newCustomer = getAllCustomers();
-        shopRepository.remove(newCustomer.getId());
+        customerRepository.remove(newCustomer.getId());
 
         assertThat(otherCustomer.getName()).isEqualTo(getAllCustomers().getName());
         assertThat(otherCustomer.getSurname()).isEqualTo(getAllCustomers().getSurname());
@@ -77,7 +77,7 @@ public class CustomerRepositoryShould extends BaseRepositoryShould {
                 "image.jpg");
         int customerId = getAllCustomers().getId();
 
-        shopRepository.update(customerId, newCustomer);
+        customerRepository.update(customerId, newCustomer);
 
         assertThat(newCustomer.getName()).isEqualTo(getAllCustomers().getName());
         assertThat(customerId).isEqualTo(getAllCustomers().getId());
@@ -90,7 +90,7 @@ public class CustomerRepositoryShould extends BaseRepositoryShould {
         insertCustomer(customerDTO);
         Customer customer = getAllCustomers();
 
-        Customer newCustomer = shopRepository.getCustomer(customer.getId());
+        Customer newCustomer = customerRepository.getCustomer(customer.getId());
 
         assertThat(customerDTO.getName()).isEqualTo(newCustomer.getName());
         assertThat(customerDTO.getSurname()).isEqualTo(newCustomer.getSurname());

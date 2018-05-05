@@ -1,20 +1,15 @@
 package shopApi.domains;
 
-public class User {
-    private int id;
+public class UserDTO {
     private final String name;
     private final String password;
     private final String email;
 
-    public User(int id, String name, String password, String email) {
-        this.id = id;
+    public UserDTO(String name, String password, String email) {
+
         this.name = name;
         this.password = password;
         this.email = email;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getName() {
