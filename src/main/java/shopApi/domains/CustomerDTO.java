@@ -15,7 +15,7 @@ public class CustomerDTO {
     public CustomerDTO() {
 
     }
-    
+
     public String getName() {
         return name;
     }

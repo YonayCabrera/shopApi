@@ -49,14 +49,19 @@ public class ShopRepositoryPostgreSql implements ShopRepository {
     }
 
     @Override
-    public void update(int id, CustomerDTO newCustomer) {
+    public void update(int customerId, CustomerDTO newCustomer) {
         final String query = "UPDATE customers SET name = :name, surname = :surname, image = :image WHERE id =:id";
         try (Connection connection = sql2o.open()) {
             connection.createQuery(query)
                     .addParameter("name", newCustomer.getName())
                     .addParameter("surname", newCustomer.getSurname())
                     .addParameter("image", newCustomer.getImage())
-                    .addParameter("id", id).executeUpdate();
+                    .addParameter("id", customerId).executeUpdate();
         }
+    }
+
+    @Override
+    public Customer getCustomer(int customerId) {
+        return null;
     }
 }

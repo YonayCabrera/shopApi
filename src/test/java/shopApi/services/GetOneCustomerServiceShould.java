@@ -7,21 +7,23 @@ import shopApi.repositories.ShopRepository;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class GetAllCustomersServiceShould {
+public class GetOneCustomerServiceShould {
 
     private ShopRepository shopRepository;
-    private GetAllCustomersService getAllCustomersService;
+    private GetCustomerService getCustomerService;
 
     @Before
     public void setUp() throws Exception {
         shopRepository = mock(ShopRepository.class);
-        getAllCustomersService = new GetAllCustomersService(shopRepository);
+        getCustomerService = new GetCustomerService(shopRepository);
     }
 
     @Test
-    public void get_all_customers(){
-        getAllCustomersService.execute();
+    public void get_customer(){
+        int customerId=1;
 
-        verify(shopRepository).getAllCustomers();
+        getCustomerService.execute(customerId);
+
+        verify(shopRepository).getCustomer(customerId);
     }
 }
