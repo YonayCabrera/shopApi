@@ -62,6 +62,9 @@ public class ShopRepositoryPostgreSql implements ShopRepository {
 
     @Override
     public Customer getCustomer(int customerId) {
-        return null;
+        final String query = "SELECT * FROM customers WHERE id =" + customerId;
+        try (Connection connection = sql2o.open()) {
+            return connection.createQuery(query).executeAndFetch(Customer.class).get(0);
+        }
     }
 }
