@@ -11,9 +11,9 @@ public interface ShopRepository {
 
     List<Customer> getAllCustomers();
 
-    void save(Customer customer);
+    void save(CustomerDTO customerDTO);
 
-    void remove(Customer customer);
+    void remove(int customerId);
 
     void update(int id, CustomerDTO customerDTO);
 

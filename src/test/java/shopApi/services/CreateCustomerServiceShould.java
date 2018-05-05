@@ -3,6 +3,7 @@ package shopApi.services;
 import org.junit.Before;
 import org.junit.Test;
 import shopApi.domains.Customer;
+import shopApi.domains.CustomerDTO;
 import shopApi.repositories.ShopRepository;
 
 import static org.mockito.Mockito.mock;
@@ -21,14 +22,13 @@ public class CreateCustomerServiceShould {
 
     @Test
     public void save_one_customer(){
-        Customer customer = new Customer(
-                1,
+        CustomerDTO customerDTO = new CustomerDTO(
                 "yonay",
                 "cabrera",
                 "image.jpg");
 
-        createCustomerService.execute(customer);
+        createCustomerService.execute(customerDTO);
 
-        verify(shopRepository).save(customer);
+        verify(shopRepository).save(customerDTO);
     }
 }

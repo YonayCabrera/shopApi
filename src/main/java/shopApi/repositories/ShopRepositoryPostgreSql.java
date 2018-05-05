@@ -28,21 +28,20 @@ public class ShopRepositoryPostgreSql implements ShopRepository {
     }
 
     @Override
-    public void save(Customer customer) {
-        final String query = "INSERT INTO customers(id,name, surname, image)" +
-                " VALUES (:id, :name, :surname, :image)";
+    public void save(CustomerDTO customerDTO) {
+        final String query = "INSERT INTO customers(name, surname, image)" +
+                " VALUES (:name, :surname, :image)";
         try (Connection connection = sql2o.open()) {
             connection.createQuery(query)
-                    .addParameter("id", customer.getId())
-                    .addParameter("name", customer.getName())
-                    .addParameter("surname", customer.getSurname())
-                    .addParameter("image", customer.getImage()).executeUpdate();
+                    .addParameter("name", customerDTO.getName())
+                    .addParameter("surname", customerDTO.getSurname())
+                    .addParameter("image", customerDTO.getImage()).executeUpdate();
         }
     }
 
     @Override
-    public void remove(Customer customer) {
-        final String query = "DELETE FROM customers WHERE id ="+customer.getId();
+    public void remove(int customerId) {
+        final String query = "DELETE FROM customers WHERE id ="+customerId;
         try (Connection connection = sql2o.open()) {
             connection.createQuery(query).executeUpdate();
         }

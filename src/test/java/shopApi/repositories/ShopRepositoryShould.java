@@ -19,82 +19,89 @@ public class ShopRepositoryShould extends BaseRepositoryShould{
 
     private Sql2o connection;
     private ShopRepositoryPostgreSql shopRepository;
-    private Customer customer;
+    private CustomerDTO customerDTO;
 
 
     @Before
     public void given_a_repository_and_a_database() {
         connection = new Sql2o(connectionTestDatabase, dbUser, dbPassword);
         shopRepository = new ShopRepositoryPostgreSql(connectionTestDatabase);
-        customer = new Customer(1,"yonay","cabrera","aaa");
+        customerDTO = new CustomerDTO("yonay","cabrera","aaa");
     }
 
     @Test
     public void get_all_customers(){
-        insertCustomer(customer);
+        insertCustomer(customerDTO);
 
         List<Customer>customers = shopRepository.getAllCustomers();
 
-        assertThat(customer.getName()).isEqualTo(customers.get(0).getName());
+        assertThat(customerDTO.getName()).isEqualTo(customers.get(0).getName());
     }
 
     @Test
     public void save_one_customer(){
-        shopRepository.save(customer);
+        shopRepository.save(customerDTO);
 
         Customer newCustomer = getAllCustomers();
 
-        assertThat(newCustomer).isEqualTo(customer);
+        assertThat(newCustomer.getName()).isEqualTo(customerDTO.getName());
+        assertThat(newCustomer.getSurname()).isEqualTo(customerDTO.getSurname());
+        assertThat(newCustomer.getImage()).isEqualTo(customerDTO.getImage());
     }
 
     @Test
     public void remove_one_customer(){
-        Customer otherCustomer = new Customer(
-                2,
+        CustomerDTO otherCustomer = new CustomerDTO(
                 "jose",
                 "déniz",
                 "image.jpg");
-        insertCustomer(customer);
+        insertCustomer(customerDTO);
         insertCustomer(otherCustomer);
 
-        shopRepository.remove(customer);
+        Customer newCustomer = getAllCustomers();
+        shopRepository.remove(newCustomer.getId());
 
-        assertThat(otherCustomer).isEqualTo(getAllCustomers());
+        assertThat(otherCustomer.getName()).isEqualTo(getAllCustomers().getName());
+        assertThat(otherCustomer.getSurname()).isEqualTo(getAllCustomers().getSurname());
+        assertThat(otherCustomer.getImage()).isEqualTo(getAllCustomers().getImage());
     }
 
     @Test
     public void update_one_customer(){
-        insertCustomer(customer);
+        insertCustomer(customerDTO);
         CustomerDTO newCustomer = new CustomerDTO(
                 "jose",
                 "déniz",
                 "image.jpg");
+        int customerId = getAllCustomers().getId();
 
-        shopRepository.update(customer.getId(), newCustomer);
+        shopRepository.update(customerId, newCustomer);
 
         assertThat(newCustomer.getName()).isEqualTo(getAllCustomers().getName());
-        assertThat(customer.getId()).isEqualTo(getAllCustomers().getId());
+        assertThat(customerId).isEqualTo(getAllCustomers().getId());
         assertThat(newCustomer.getSurname()).isEqualTo(getAllCustomers().getSurname());
         assertThat(newCustomer.getImage()).isEqualTo(getAllCustomers().getImage());
     }
 
     @Test
     public void get_one_customer(){
-        insertCustomer(customer);
+        insertCustomer(customerDTO);
+        Customer customer = getAllCustomers();
 
         Customer newCustomer = shopRepository.getCustomer(customer.getId());
 
-        assertThat(customer).isEqualTo(newCustomer);
+        assertThat(customerDTO.getName()).isEqualTo(newCustomer.getName());
+        assertThat(customerDTO.getSurname()).isEqualTo(newCustomer.getSurname());
+        assertThat(customerDTO.getImage()).isEqualTo(newCustomer.getImage());
     }
 
-    private void insertCustomer(Customer customer) {
+    private void insertCustomer(CustomerDTO customerDTO) {
         try (Connection connection = this.connection.open()) {
-            connection.createQuery("INSERT INTO customers(id,name, surname, image)" +
-                    " VALUES (:id, :name, :surname, :image)")
-                    .addParameter("id", customer.getId())
-                    .addParameter("name", customer.getName())
-                    .addParameter("surname", customer.getSurname())
-                    .addParameter("image", customer.getImage()).executeUpdate();
+            connection.createQuery("INSERT INTO customers(name, surname, image)" +
+                    " VALUES (:name, :surname, :image)")
+                    .addParameter("name", customerDTO.getName())
+                    .addParameter("surname", customerDTO.getSurname())
+                    .addParameter("image", customerDTO.getImage()).executeUpdate();
         }
     }
 

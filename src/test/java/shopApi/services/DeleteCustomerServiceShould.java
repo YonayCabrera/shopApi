@@ -26,8 +26,8 @@ public class DeleteCustomerServiceShould {
                 "yonay",
                 "cabrera",
                 "image.jpg");
-        deleteCustomerService.execute(customer);
+        deleteCustomerService.execute(customer.getId());
 
-        verify(shopRepository).remove(customer);
+        verify(shopRepository).remove(customer.getId());
     }
 }

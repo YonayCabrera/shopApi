@@ -15,7 +15,7 @@ public class DeleteCustomerService {
         this.shopRepository = shopRepository;
     }
 
-    public void execute(Customer customer) {
-        shopRepository.remove(customer);
+    public void execute(int customerId) {
+        shopRepository.remove(customerId);
     }
 }

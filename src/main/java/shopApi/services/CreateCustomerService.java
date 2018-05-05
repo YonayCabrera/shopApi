@@ -2,7 +2,7 @@ package shopApi.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import shopApi.domains.Customer;
+import shopApi.domains.CustomerDTO;
 import shopApi.repositories.ShopRepository;
 
 @Service
@@ -14,7 +14,7 @@ public class CreateCustomerService {
         this.shopRepository = shopRepository;
     }
 
-    public void execute(Customer customer) {
-        shopRepository.save(customer);
+    public void execute(CustomerDTO customerDTO) {
+        shopRepository.save(customerDTO);
     }
 }

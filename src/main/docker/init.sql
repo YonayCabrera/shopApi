@@ -1,7 +1,8 @@
-CREATE TABLE customers
+CREATE TABLE public.customers
 (
-  ID SERIAL PRIMARY KEY NOT NULL,
-  image TEXT NOT NULL,
-  name TEXT NOT NULL,
-  surname TEXT NOT NULL
+    id serial PRIMARY KEY NOT NULL,
+    name TEXT NOT NULL,
+    surname TEXT NOT NULL,
+    image TEXT NOT NULL
 );
+CREATE UNIQUE INDEX customers_id_uindex ON public.customers (id);
