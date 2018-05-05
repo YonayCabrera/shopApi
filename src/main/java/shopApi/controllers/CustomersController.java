@@ -2,10 +2,9 @@ package shopApi.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import shopApi.domains.Customer;
+import shopApi.domains.CustomerDTO;
 import shopApi.services.GetAllCustomersService;
 import shopApi.services.UpdateCustomerService;
 
@@ -29,9 +28,10 @@ public class CustomersController {
         return getAllCustomersService.execute();
     }
 
-    @PutMapping("/customer/:id")
-    public Customer updateCustomer() {
-        return null;
+    @ResponseBody
+    @PutMapping("/customer/{id}")
+    public void updateCustomer(@PathVariable("id") int id, @RequestBody CustomerDTO customerDTO) {
+        updateCustomerService.execute(id,customerDTO);
     }
 
 }

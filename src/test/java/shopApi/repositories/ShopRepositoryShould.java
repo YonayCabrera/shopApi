@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import shopApi.domains.Customer;
+import shopApi.domains.CustomerDTO;
 
 import java.util.List;
 import static org.assertj.core.api.Java6Assertions.assertThat;
@@ -64,15 +65,17 @@ public class ShopRepositoryShould extends BaseRepositoryShould{
     @Test
     public void update_one_customer(){
         insertCustomer(customer);
-        Customer newCustomer = new Customer(
-                1,
+        CustomerDTO newCustomer = new CustomerDTO(
                 "jose",
                 "déniz",
                 "image.jpg");
 
         shopRepository.update(customer.getId(), newCustomer);
 
-        assertThat(newCustomer).isEqualTo(getAllCustomers());
+        assertThat(newCustomer.getName()).isEqualTo(getAllCustomers().getName());
+        assertThat(customer.getId()).isEqualTo(getAllCustomers().getId());
+        assertThat(newCustomer.getSurname()).isEqualTo(getAllCustomers().getSurname());
+        assertThat(newCustomer.getImage()).isEqualTo(getAllCustomers().getImage());
     }
 
     private void insertCustomer(Customer customer) {

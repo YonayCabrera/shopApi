@@ -3,6 +3,7 @@ package shopApi.repositories;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import shopApi.domains.Customer;
+import shopApi.domains.CustomerDTO;
 
 import java.util.List;
 
@@ -48,7 +49,7 @@ public class ShopRepositoryPostgreSql implements ShopRepository {
     }
 
     @Override
-    public void update(int id, Customer newCustomer) {
+    public void update(int id, CustomerDTO newCustomer) {
         final String query = "UPDATE customers SET name = :name, surname = :surname, image = :image WHERE id =:id";
         try (Connection connection = sql2o.open()) {
             connection.createQuery(query)

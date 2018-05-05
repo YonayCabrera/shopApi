@@ -2,6 +2,7 @@ package shopApi.repositories;
 
 import org.springframework.stereotype.Repository;
 import shopApi.domains.Customer;
+import shopApi.domains.CustomerDTO;
 
 import java.util.List;
 
@@ -14,5 +15,5 @@ public interface ShopRepository {
 
     void remove(Customer customer);
 
-    void update(int id, Customer customer);
+    void update(int id, CustomerDTO customerDTO);
 }

@@ -3,6 +3,7 @@ package shopApi.services;
 import org.junit.Before;
 import org.junit.Test;
 import shopApi.domains.Customer;
+import shopApi.domains.CustomerDTO;
 import shopApi.repositories.ShopRepository;
 
 import static org.mockito.Mockito.mock;
@@ -26,8 +27,7 @@ public class UpdateCustomerServiceShould {
                 "yonay",
                 "cabrera",
                 "image.jpg");
-        Customer newCustomer = new Customer(
-                1,
+        CustomerDTO newCustomer = new CustomerDTO(
                 "jose",
                 "deniz",
                 "image.jpg");
