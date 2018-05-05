@@ -8,22 +8,22 @@ import shopApi.repositories.userRepository.UserRepository;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class CreateUserServiceShould {
+public class CreateUserShould {
 
     private UserRepository userRepository;
-    private CreateUserService createUserService;
+    private CreateUser createUser;
 
     @Before
     public void setUp() throws Exception {
         userRepository = mock(UserRepository.class);
-        createUserService = new CreateUserService(userRepository);
+        createUser = new CreateUser(userRepository);
     }
 
     @Test
     public void add_user(){
         UserDTO userDTO = new UserDTO("name","password", "email");
 
-        createUserService.execute(userDTO);
+        createUser.execute(userDTO);
 
         verify(userRepository).save(userDTO);
     }

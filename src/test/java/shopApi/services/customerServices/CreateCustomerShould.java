@@ -8,15 +8,15 @@ import shopApi.repositories.customerRepository.CustomerRepository;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class CreateCustomerServiceShould {
+public class CreateCustomerShould {
 
     private CustomerRepository customerRepository;
-    private CreateCustomerService createCustomerService;
+    private CreateCustomer createCustomer;
 
     @Before
     public void setUp() throws Exception {
         customerRepository = mock(CustomerRepository.class);
-        createCustomerService = new CreateCustomerService(customerRepository);
+        createCustomer = new CreateCustomer(customerRepository);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class CreateCustomerServiceShould {
                 "cabrera",
                 "image.jpg");
 
-        createCustomerService.execute(customerDTO);
+        createCustomer.execute(customerDTO);
 
         verify(customerRepository).save(customerDTO);
     }

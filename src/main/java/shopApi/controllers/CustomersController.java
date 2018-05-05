@@ -12,51 +12,51 @@ import java.util.List;
 @RestController
 public class CustomersController {
 
-    private GetAllCustomersService getAllCustomersService;
-    private UpdateCustomerService updateCustomerService;
-    private GetCustomerService getCustomerService;
-    private DeleteCustomerService deleteCustomerService;
-    private CreateCustomerService createCustomerService;
+    private GetAllCustomers getAllCustomers;
+    private UpdateCustomer updateCustomer;
+    private GetCustomer getCustomer;
+    private DeleteCustomer deleteCustomer;
+    private CreateCustomer createCustomer;
 
     @Autowired
-    public CustomersController(GetAllCustomersService getAllCustomersService,
-                               UpdateCustomerService updateCustomerService,
-                               GetCustomerService getCustomerService,
-                               DeleteCustomerService deleteCustomerService,
-                               CreateCustomerService createCustomerService) {
+    public CustomersController(GetAllCustomers getAllCustomers,
+                               UpdateCustomer updateCustomer,
+                               GetCustomer getCustomer,
+                               DeleteCustomer deleteCustomer,
+                               CreateCustomer createCustomer) {
 
-        this.getAllCustomersService = getAllCustomersService;
-        this.updateCustomerService = updateCustomerService;
-        this.getCustomerService = getCustomerService;
-        this.deleteCustomerService = deleteCustomerService;
-        this.createCustomerService = createCustomerService;
+        this.getAllCustomers = getAllCustomers;
+        this.updateCustomer = updateCustomer;
+        this.getCustomer = getCustomer;
+        this.deleteCustomer = deleteCustomer;
+        this.createCustomer = createCustomer;
     }
 
     @GetMapping("/customers")
     public List<Customer> allCustomers() {
-        return getAllCustomersService.execute();
+        return getAllCustomers.execute();
     }
 
     @ResponseBody
     @PutMapping("/customers/{id}")
     public void updateCustomer(@PathVariable("id") int id, @RequestBody CustomerDTO customerDTO) {
-        updateCustomerService.execute(id,customerDTO);
+        updateCustomer.execute(id,customerDTO);
     }
 
     @GetMapping("/customers/{id}")
     public Customer getCustomer(@PathVariable("id") int id) {
-        return getCustomerService.execute(id);
+        return getCustomer.execute(id);
     }
 
     @DeleteMapping("/customers/{id}")
     public void deleteCustomer(@PathVariable("id") int customerId){
-        deleteCustomerService.execute(customerId);
+        deleteCustomer.execute(customerId);
     }
 
     @ResponseBody
     @PostMapping("/createCustomer")
     public void createCustomer(@RequestBody CustomerDTO customerDTO){
-        createCustomerService.execute(customerDTO);
+        createCustomer.execute(customerDTO);
     }
 
 }

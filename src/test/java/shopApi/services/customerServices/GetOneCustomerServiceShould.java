@@ -10,19 +10,19 @@ import static org.mockito.Mockito.verify;
 public class GetOneCustomerServiceShould {
 
     private CustomerRepository customerRepository;
-    private GetCustomerService getCustomerService;
+    private GetCustomer getCustomer;
 
     @Before
     public void setUp() throws Exception {
         customerRepository = mock(CustomerRepository.class);
-        getCustomerService = new GetCustomerService(customerRepository);
+        getCustomer = new GetCustomer(customerRepository);
     }
 
     @Test
     public void get_customer(){
         int customerId=1;
 
-        getCustomerService.execute(customerId);
+        getCustomer.execute(customerId);
 
         verify(customerRepository).getCustomer(customerId);
     }

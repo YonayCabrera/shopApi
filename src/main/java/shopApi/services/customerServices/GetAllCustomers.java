@@ -2,19 +2,21 @@ package shopApi.services.customerServices;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import shopApi.domains.Customer;
 import shopApi.repositories.customerRepository.CustomerRepository;
 
+import java.util.List;
+
 @Service
-public class DeleteCustomerService {
+public class GetAllCustomers {
     private CustomerRepository customerRepository;
 
     @Autowired
-    public DeleteCustomerService(CustomerRepository customerRepository) {
-
+    public GetAllCustomers(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
 
-    public void execute(int customerId) {
-        customerRepository.remove(customerId);
+    public List<Customer> execute() {
+        return customerRepository.getAllCustomers();
     }
 }

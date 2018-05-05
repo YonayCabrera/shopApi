@@ -8,15 +8,15 @@ import shopApi.repositories.customerRepository.CustomerRepository;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class DeleteCustomerServiceShould {
+public class DeleteCustomerShould {
 
     private CustomerRepository customerRepository;
-    private DeleteCustomerService deleteCustomerService;
+    private DeleteCustomer deleteCustomer;
 
     @Before
     public void setUp() throws Exception {
         customerRepository = mock(CustomerRepository.class);
-        deleteCustomerService = new DeleteCustomerService(customerRepository);
+        deleteCustomer = new DeleteCustomer(customerRepository);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class DeleteCustomerServiceShould {
                 "yonay",
                 "cabrera",
                 "image.jpg");
-        deleteCustomerService.execute(customer.getId());
+        deleteCustomer.execute(customer.getId());
 
         verify(customerRepository).remove(customer.getId());
     }

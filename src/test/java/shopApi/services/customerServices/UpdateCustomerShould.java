@@ -9,15 +9,15 @@ import shopApi.repositories.customerRepository.CustomerRepository;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class UpdateCustomerServiceShould {
+public class UpdateCustomerShould {
 
     private CustomerRepository customerRepository;
-    private UpdateCustomerService updateCustomerService;
+    private UpdateCustomer updateCustomer;
 
     @Before
     public void setUp() throws Exception {
         customerRepository = mock(CustomerRepository.class);
-        updateCustomerService = new UpdateCustomerService(customerRepository);
+        updateCustomer = new UpdateCustomer(customerRepository);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class UpdateCustomerServiceShould {
                 "deniz",
                 "image.jpg");
 
-        updateCustomerService.execute(customer.getId(),newCustomer);
+        updateCustomer.execute(customer.getId(),newCustomer);
 
         verify(customerRepository).update(customer.getId(), newCustomer);
     }

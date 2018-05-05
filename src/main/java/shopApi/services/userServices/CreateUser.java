@@ -3,10 +3,10 @@ package shopApi.services.userServices;
 import shopApi.domains.UserDTO;
 import shopApi.repositories.userRepository.UserRepository;
 
-public class CreateUserService {
+public class CreateUser {
     private UserRepository userRepository;
 
-    public CreateUserService(UserRepository userRepository) {
+    public CreateUser(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
