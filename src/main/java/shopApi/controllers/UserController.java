@@ -21,7 +21,7 @@ public class UserController {
 
     @Autowired
     public UserController(GetAllUsers getAllUsers, CreateUser createUser,
-                          DeleteUser deleteUser, UpdateUser updateUser){
+                          DeleteUser deleteUser, UpdateUser updateUser) {
 
         this.getAllUsers = getAllUsers;
         this.createUser = createUser;
@@ -30,13 +30,19 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public List<User> getAllUsers(){
+    public List<User> getAllUsers() {
         return getAllUsers.execute();
     }
 
     @ResponseBody
     @PostMapping("/createUser")
-    public void createUser(@RequestBody UserDTO userDTO){
+    public void createUser(@RequestBody UserDTO userDTO) {
         createUser.execute(userDTO);
+    }
+
+    @ResponseBody
+    @PutMapping("/users/{id}")
+    public void updateUser(@PathVariable("id") int userId, @RequestBody UserDTO userDTO) {
+        updateUser.execute(userId, userDTO);
     }
 }

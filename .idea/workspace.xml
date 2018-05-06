@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36dffc34-2e15-4b80-8e4c-9adc5a6f5203" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/57b40e57-c2cb-44ae-a94c-3c2e99f5448f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/57b40e57-c2cb-44ae-a94c-3c2e99f5448f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/domains/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/domains/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/controllers/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/domains/UserDTO.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,13 +82,14 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="339">
+              <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1047#1048#0" expanded="true" />
+                <element signature="e#1157#1158#0" expanded="true" />
+                <element signature="e#1200#1201#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,8 +129,8 @@
       <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="57" column="43" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="43" />
+            <state relative-caret-position="154">
+              <caret line="46" column="58" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -304,7 +301,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -829,7 +826,7 @@
       <workItem from="1525468843785" duration="7607000" />
       <workItem from="1525513481170" duration="24197000" />
       <workItem from="1525596958773" duration="2313000" />
-      <workItem from="1525599447652" duration="9780000" />
+      <workItem from="1525599447652" duration="10163000" />
     </task>
     <servers />
   </component>
@@ -866,10 +863,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58806000" />
+    <option name="totallyTimeSpent" value="59189000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1552" height="840" extended-state="1" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -878,7 +875,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
       <window_info id="Structure" order="1" sideWeight="0.50211865" side_tool="true" weight="0.27345845" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -1242,16 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="57" column="43" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CreateUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1287,15 +1274,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="154">
+          <caret line="46" column="58" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
           </folding>
         </state>
       </provider>
