@@ -75,7 +75,7 @@ public class UserRepositoryShould extends BaseRepositoryShould {
     }
 
     @Test
-    public void update_one_customer(){
+    public void update_one_user(){
         insertUser(userDTO);
         UserDTO newUserDTO = new UserDTO(
                 "otherUser","user123","otherUser@gmail.com","user");
