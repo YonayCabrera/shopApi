@@ -1,3 +1,23 @@
+POST http://localhost:8080/createUser?=
+Accept: */*
+Cache-Control: no-cache
+
+{"name":"user","email":"user@hmail.com","password":"patata","role":"user"}
+
+<> 2018-05-06T033217.415.json
+
+###
+
+POST http://localhost:8080/createUser?=
+Accept: */*
+Cache-Control: no-cache
+
+{"name":"user","email":"user@hmail.com","password":"patata","role":"user"}
+
+<> 2018-05-06T032924.415.json
+
+###
+
 GET http://localhost:8080/users
 Accept: */*
 Cache-Control: no-cache

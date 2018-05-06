@@ -1,9 +1,9 @@
 package shopApi.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import shopApi.domains.User;
+import shopApi.domains.UserDTO;
 import shopApi.services.userServices.CreateUser;
 import shopApi.services.userServices.DeleteUser;
 import shopApi.services.userServices.GetAllUsers;
@@ -32,5 +32,11 @@ public class UserController {
     @GetMapping("/users")
     public List<User> getAllUsers(){
         return getAllUsers.execute();
+    }
+
+    @ResponseBody
+    @PostMapping("/createUser")
+    public void createUser(@RequestBody UserDTO userDTO){
+        createUser.execute(userDTO);
     }
 }

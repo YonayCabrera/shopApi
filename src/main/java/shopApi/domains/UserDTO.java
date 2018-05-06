@@ -1,9 +1,9 @@
 package shopApi.domains;
 
 public class UserDTO {
-    private final String name;
+    private String name;
     private String password;
-    private final String email;
+    private String email;
     private String role;
 
     public UserDTO(String name, String password, String email, String role) {
@@ -12,6 +12,10 @@ public class UserDTO {
         this.password = password;
         this.email = email;
         this.role = role;
+    }
+
+    public UserDTO(){
+
     }
 
     public String getName() {
