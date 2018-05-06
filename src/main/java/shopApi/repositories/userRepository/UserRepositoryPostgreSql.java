@@ -2,7 +2,10 @@ package shopApi.repositories.userRepository;
 
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
+import shopApi.domains.User;
 import shopApi.domains.UserDTO;
+
+import java.util.List;
 
 public class UserRepositoryPostgreSql implements UserRepository {
     private final Sql2o sql2o;
@@ -25,5 +28,10 @@ public class UserRepositoryPostgreSql implements UserRepository {
                     .addParameter("password", userDTO.getPassword())
                     .addParameter("email", userDTO.getEmail()).executeUpdate();
         }
+    }
+
+    @Override
+    public List<User> getAllUsers() {
+        return null;
     }
 }
