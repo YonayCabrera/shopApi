@@ -7,7 +7,7 @@ import shopApi.repositories.customerRepository.CustomerRepository;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class GetOneCustomerServiceShould {
+public class GetOneCustomerShould {
 
     private CustomerRepository customerRepository;
     private GetCustomer getCustomer;
