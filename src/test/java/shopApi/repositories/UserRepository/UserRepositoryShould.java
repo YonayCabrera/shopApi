@@ -74,6 +74,24 @@ public class UserRepositoryShould extends BaseRepositoryShould {
         assertThat(otherUserDTO.getRole()).isEqualTo(getAllUsers().getRole());
     }
 
+    @Test
+    public void update_one_customer(){
+        insertUser(userDTO);
+        UserDTO newUserDTO = new UserDTO(
+                "otherUser","user123","otherUser@gmail.com","user");
+        int userId = getAllUsers().getId();
+        String hashPassword = HashPassword(userDTO);
+        userDTO.setPassword(hashPassword);
+
+        userRepository.updateUser(userId, newUserDTO);
+
+        assertThat(newUserDTO.getName()).isEqualTo(getAllUsers().getName());
+        assertThat(userId).isEqualTo(getAllUsers().getId());
+        assertThat(newUserDTO.getEmail()).isEqualTo(getAllUsers().getEmail());
+        assertThat(newUserDTO.getPassword()).isEqualTo(getAllUsers().getPassword());
+        assertThat(newUserDTO.getRole()).isEqualTo(getAllUsers().getRole());
+    }
+
     private User getAllUsers(){
         try (Connection connection = this.connection.open()) {
             return connection.createQuery("Select * from users")

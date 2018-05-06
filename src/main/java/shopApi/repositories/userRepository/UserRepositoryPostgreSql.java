@@ -48,7 +48,16 @@ public class UserRepositoryPostgreSql implements UserRepository {
     }
 
     @Override
-    public void updateUser(int userId, UserDTO userDTO) {
-
+    public void updateUser(int userId, UserDTO newUserDTO) {
+        final String query = "UPDATE users SET name = :name, password = :password," +
+                " email = :email, role = :role WHERE id =:id";
+        try (Connection connection = sql2o.open()) {
+            connection.createQuery(query)
+                    .addParameter("name", newUserDTO.getName())
+                    .addParameter("password", newUserDTO.getPassword())
+                    .addParameter("email", newUserDTO.getEmail())
+                    .addParameter("role", newUserDTO.getRole())
+                    .addParameter("id", userId).executeUpdate();
+        }
     }
 }
