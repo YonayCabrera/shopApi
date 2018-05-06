@@ -2,6 +2,7 @@ package shopApi.services.userServices;
 
 import org.junit.Before;
 import org.junit.Test;
+import shopApi.domain.Roles;
 import shopApi.domain.User;
 import shopApi.repositories.userRepository.UserRepository;
 
@@ -25,7 +26,7 @@ public class DeleteUserShould {
                 "user",
                 "user123",
                 "user@gmail.com",
-                "user");
+                Roles.USER);
         deleteUser.execute(user.getId());
 
         verify(userRepository).deleteUser(user.getId());

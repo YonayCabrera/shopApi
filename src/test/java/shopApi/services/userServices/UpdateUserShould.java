@@ -2,6 +2,7 @@ package shopApi.services.userServices;
 
 import org.junit.Before;
 import org.junit.Test;
+import shopApi.domain.Roles;
 import shopApi.domain.User;
 import shopApi.domain.UserDTO;
 import shopApi.repositories.userRepository.UserRepository;
@@ -26,7 +27,7 @@ public class UpdateUserShould {
                 "user",
                 "user123",
                 "user@gmail.com",
-                "user");
+                Roles.USER);
         UserDTO newUser = new UserDTO(
                 "newUser",
                 "newUser123",

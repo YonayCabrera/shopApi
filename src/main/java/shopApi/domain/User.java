@@ -5,9 +5,9 @@ public class User {
     private final String name;
     private final String password;
     private final String email;
-    private String role;
+    private final Roles role;
 
-    public User(int id, String name, String password, String email, String role) {
+    public User(int id, String name, String password, String email, Roles role) {
         this.id = id;
         this.name = name;
         this.password = password;
@@ -31,7 +31,7 @@ public class User {
         return email;
     }
 
-    public String getRole() {
+    public Roles getRole() {
         return role;
     }
 }
