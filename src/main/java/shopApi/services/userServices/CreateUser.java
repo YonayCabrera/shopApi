@@ -14,10 +14,15 @@ public class CreateUser {
     }
 
     public void execute(UserDTO userDTO) {
-        String hashPassword = Hashing.sha256()
+        String hashPassword = HashPassword(userDTO);
+        userDTO.setPassword(hashPassword);
+
+        userRepository.save(userDTO);
+    }
+
+    private String HashPassword(UserDTO userDTO) {
+        return Hashing.sha256()
                 .hashString(userDTO.getPassword(), StandardCharsets.UTF_8)
                 .toString();
-        userDTO.setPassword(hashPassword);
-        userRepository.save(userDTO);
     }
 }
