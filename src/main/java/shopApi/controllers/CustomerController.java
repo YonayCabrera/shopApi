@@ -3,8 +3,8 @@ package shopApi.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import shopApi.domains.Customer;
-import shopApi.domains.CustomerDTO;
+import shopApi.domain.Customer;
+import shopApi.domain.CustomerDTO;
 import shopApi.services.customerServices.*;
 
 import java.util.List;

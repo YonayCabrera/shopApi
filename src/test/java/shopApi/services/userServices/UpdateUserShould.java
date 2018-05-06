@@ -2,8 +2,8 @@ package shopApi.services.userServices;
 
 import org.junit.Before;
 import org.junit.Test;
-import shopApi.domains.User;
-import shopApi.domains.UserDTO;
+import shopApi.domain.User;
+import shopApi.domain.UserDTO;
 import shopApi.repositories.userRepository.UserRepository;
 
 import static org.mockito.Mockito.mock;

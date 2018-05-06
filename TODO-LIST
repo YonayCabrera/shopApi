@@ -10,6 +10,7 @@
 -  perfeccionar los endpoints
 -  reflexionar sobre los contratos de los servicios
 -  Añadir sincronia a las llamadas con CompletableFuture
+-  Comprobar dockerfile con el init.sql actualizado
 -  enviar estado de las llamadas
 -  despliegue en ec2 o en heroku
 -  añadir jenkins o hacer uso de travis ci o bitbucket pipeline

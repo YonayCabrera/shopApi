@@ -2,7 +2,7 @@ package shopApi.services.customerServices;
 
 import org.junit.Before;
 import org.junit.Test;
-import shopApi.domains.CustomerDTO;
+import shopApi.domain.CustomerDTO;
 import shopApi.repositories.customerRepository.CustomerRepository;
 
 import static org.mockito.Mockito.mock;

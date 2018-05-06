@@ -2,8 +2,8 @@ package shopApi.repositories.customerRepository;
 
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
-import shopApi.domains.Customer;
-import shopApi.domains.CustomerDTO;
+import shopApi.domain.Customer;
+import shopApi.domain.CustomerDTO;
 
 import java.util.List;
 

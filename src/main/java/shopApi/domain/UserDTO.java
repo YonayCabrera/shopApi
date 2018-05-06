@@ -1,4 +1,4 @@
-package shopApi.domains;
+package shopApi.domain;
 
 public class UserDTO {
     private String name;

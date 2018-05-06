@@ -2,7 +2,7 @@ package shopApi.services.customerServices;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import shopApi.domains.Customer;
+import shopApi.domain.Customer;
 import shopApi.repositories.customerRepository.CustomerRepository;
 
 import java.util.List;

@@ -2,8 +2,8 @@ package shopApi.repositories.userRepository;
 
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
-import shopApi.domains.User;
-import shopApi.domains.UserDTO;
+import shopApi.domain.User;
+import shopApi.domain.UserDTO;
 
 import java.util.List;
 

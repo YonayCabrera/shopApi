@@ -2,8 +2,8 @@ package shopApi.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import shopApi.domains.User;
-import shopApi.domains.UserDTO;
+import shopApi.domain.User;
+import shopApi.domain.UserDTO;
 import shopApi.services.userServices.CreateUser;
 import shopApi.services.userServices.DeleteUser;
 import shopApi.services.userServices.GetAllUsers;

@@ -5,8 +5,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
-import shopApi.domains.User;
-import shopApi.domains.UserDTO;
+import shopApi.domain.User;
+import shopApi.domain.UserDTO;
 import shopApi.repositories.BaseRepositoryShould;
 import shopApi.repositories.userRepository.UserRepositoryPostgreSql;
 

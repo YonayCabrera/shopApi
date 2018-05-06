@@ -1,4 +1,4 @@
-package shopApi.domains;
+package shopApi.domain;
 
 import java.util.Objects;
 

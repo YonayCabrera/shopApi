@@ -1,4 +1,4 @@
-package shopApi.domains;
+package shopApi.domain;
 
 public class User {
     private int id;

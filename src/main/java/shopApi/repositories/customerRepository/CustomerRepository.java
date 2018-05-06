@@ -1,8 +1,8 @@
 package shopApi.repositories.customerRepository;
 
 import org.springframework.stereotype.Repository;
-import shopApi.domains.Customer;
-import shopApi.domains.CustomerDTO;
+import shopApi.domain.Customer;
+import shopApi.domain.CustomerDTO;
 
 import java.util.List;
 
