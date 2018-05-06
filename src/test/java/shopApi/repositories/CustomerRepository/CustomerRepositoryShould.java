@@ -28,7 +28,7 @@ public class CustomerRepositoryShould extends BaseRepositoryShould {
     public void given_a_repository_and_a_database() {
         connection = new Sql2o(connectionTestDatabase, dbUser, dbPassword);
         customerRepository = new CustomerRepositoryPostgreSql(connectionTestDatabase);
-        customerDTO = new CustomerDTO("yonay","cabrera","aaa");
+        customerDTO = new CustomerDTO("yonay","cabrera","image.png");
     }
 
     @Test

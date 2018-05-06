@@ -1,14 +1,18 @@
 package shopApi.services.userServices;
 
 import com.google.common.hash.Hashing;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import shopApi.domains.UserDTO;
 import shopApi.repositories.userRepository.UserRepository;
 
 import java.nio.charset.StandardCharsets;
 
+@Service
 public class CreateUser {
     private UserRepository userRepository;
 
+    @Autowired
     public CreateUser(UserRepository userRepository) {
         this.userRepository = userRepository;
     }

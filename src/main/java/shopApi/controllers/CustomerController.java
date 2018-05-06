@@ -10,7 +10,7 @@ import shopApi.services.customerServices.*;
 import java.util.List;
 
 @RestController
-public class CustomersController {
+public class CustomerController {
 
     private GetAllCustomers getAllCustomers;
     private UpdateCustomer updateCustomer;
@@ -19,11 +19,11 @@ public class CustomersController {
     private CreateCustomer createCustomer;
 
     @Autowired
-    public CustomersController(GetAllCustomers getAllCustomers,
-                               UpdateCustomer updateCustomer,
-                               GetCustomer getCustomer,
-                               DeleteCustomer deleteCustomer,
-                               CreateCustomer createCustomer) {
+    public CustomerController(GetAllCustomers getAllCustomers,
+                              UpdateCustomer updateCustomer,
+                              GetCustomer getCustomer,
+                              DeleteCustomer deleteCustomer,
+                              CreateCustomer createCustomer) {
 
         this.getAllCustomers = getAllCustomers;
         this.updateCustomer = updateCustomer;

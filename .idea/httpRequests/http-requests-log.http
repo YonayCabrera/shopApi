@@ -1,3 +1,11 @@
+GET http://localhost:8080/users
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-05-06T030940.200.json
+
+###
+
 GET http://localhost:8080/customers
 Accept: */*
 Cache-Control: no-cache
