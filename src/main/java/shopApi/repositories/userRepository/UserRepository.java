@@ -11,4 +11,6 @@ public interface UserRepository {
     void save(UserDTO userDTO);
 
     List<User> getAllUsers();
+
+    void deleteUser(int userId);
 }

@@ -38,4 +38,9 @@ public class UserRepositoryPostgreSql implements UserRepository {
             return connection.createQuery(query).executeAndFetch(User.class);
         }
     }
+
+    @Override
+    public void deleteUser(int userId) {
+
+    }
 }
