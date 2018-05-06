@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36dffc34-2e15-4b80-8e4c-9adc5a6f5203" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-05-06T030940.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/shopApi/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CreateUser.java" afterDir="false" />
@@ -9,6 +13,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/GetAllUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/GetAllUsers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/UpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/UpdateUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/repositories/CustomerRepository/CustomerRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/repositories/CustomerRepository/CustomerRepositoryShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/controllers/CustomersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shopApi/controllers/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/CreateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/CreateUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/DeleteUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/DeleteUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/GetAllUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/GetAllUsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/UpdateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/UpdateUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/shopApi/repositories/CustomerRepository/CustomerRepositoryShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/shopApi/repositories/CustomerRepository/CustomerRepositoryShould.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/shopApi/repositories/UserRepository/UserRepositoryShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/shopApi/repositories/UserRepository/UserRepositoryShould.class" afterDir="false" />
     </list>
@@ -100,18 +109,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepositoryShould.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/repositories/UserRepository/UserRepositoryShould.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1628">
-              <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TODO-LIST" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TODO-LIST">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,16 +118,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="295">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#574#575#0" expanded="true" />
                 <element signature="e#600#601#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users" pinned="false" current-in-tab="true">
+        <entry file="das://57b40e57-c2cb-44ae-a94c-3c2e99f5448f/database/shoptheam/schema/public/table/users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -225,6 +231,9 @@
         <entry key="$USER_HOME$/spring_heroku" value="1489532185716" />
       </map>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response1.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -783,7 +792,7 @@
       <workItem from="1525468843785" duration="7607000" />
       <workItem from="1525513481170" duration="24197000" />
       <workItem from="1525596958773" duration="2313000" />
-      <workItem from="1525599447652" duration="7940000" />
+      <workItem from="1525599447652" duration="8216000" />
     </task>
     <servers />
   </component>
@@ -820,11 +829,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56966000" />
+    <option name="totallyTimeSpent" value="57242000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="1" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -843,19 +851,19 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info active="true" anchor="bottom" id="REST Client" order="9" visible="true" weight="0.4502841" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3877841" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3877841" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2911932" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49788135" visible="true" weight="0.2774799" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32954547" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49788135" visible="true" weight="0.2774799" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32954547" />
-      <window_info anchor="bottom" id="REST Client" order="9" weight="0.4502841" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -874,7 +882,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomersControllers.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domains/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-70">
@@ -1236,13 +1243,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="295">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#574#575#0" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://57b40e57-c2cb-44ae-a94c-3c2e99f5448f/database/shoptheam/schema/public/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
