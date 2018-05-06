@@ -13,4 +13,6 @@ public interface UserRepository {
     List<User> getAllUsers();
 
     void deleteUser(int userId);
+
+    void updateUser(int userId, UserDTO userDTO);
 }

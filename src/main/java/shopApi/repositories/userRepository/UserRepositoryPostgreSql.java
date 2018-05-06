@@ -46,4 +46,9 @@ public class UserRepositoryPostgreSql implements UserRepository {
             connection.createQuery(query).executeUpdate();
         }
     }
+
+    @Override
+    public void updateUser(int userId, UserDTO userDTO) {
+
+    }
 }
