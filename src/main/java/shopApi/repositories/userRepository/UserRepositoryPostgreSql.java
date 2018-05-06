@@ -41,6 +41,9 @@ public class UserRepositoryPostgreSql implements UserRepository {
 
     @Override
     public void deleteUser(int userId) {
-
+        final String query = "DELETE FROM users WHERE id =" + userId;
+        try (Connection connection = sql2o.open()) {
+            connection.createQuery(query).executeUpdate();
+        }
     }
 }

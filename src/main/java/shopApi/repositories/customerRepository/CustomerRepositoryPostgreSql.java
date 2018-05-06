@@ -41,7 +41,7 @@ public class CustomerRepositoryPostgreSql implements CustomerRepository {
 
     @Override
     public void remove(int customerId) {
-        final String query = "DELETE FROM customers WHERE id ="+customerId;
+        final String query = "DELETE FROM customers WHERE id =" + customerId;
         try (Connection connection = sql2o.open()) {
             connection.createQuery(query).executeUpdate();
         }
