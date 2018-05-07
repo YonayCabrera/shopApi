@@ -28,6 +28,7 @@ public class UpdateCustomerShould {
                 "cabrera",
                 "image.jpg");
         CustomerDTO newCustomer = new CustomerDTO(
+                1,
                 "jose",
                 "deniz",
                 "image.jpg");

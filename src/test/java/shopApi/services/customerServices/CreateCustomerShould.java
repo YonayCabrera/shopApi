@@ -22,6 +22,7 @@ public class CreateCustomerShould {
     @Test
     public void save_one_customer(){
         CustomerDTO customerDTO = new CustomerDTO(
+                1,
                 "yonay",
                 "cabrera",
                 "image.jpg");

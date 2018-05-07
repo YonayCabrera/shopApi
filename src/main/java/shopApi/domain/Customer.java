@@ -47,4 +47,8 @@ public class Customer {
 
         return Objects.hash(id, name, surname, image);
     }
+
+    public CustomerDTO toDTO() {
+        return new CustomerDTO(id,name,surname,image);
+    }
 }

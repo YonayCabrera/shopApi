@@ -44,8 +44,8 @@ public class CustomerController {
     }
 
     @GetMapping("/customers/{id}")
-    public Customer getCustomer(@PathVariable("id") int id) {
-        return getCustomer.execute(id);
+    public CustomerDTO getCustomer(@PathVariable("id") int id) {
+        return getCustomer.execute(id).toDTO();
     }
 
     @DeleteMapping("/customers/{id}")
