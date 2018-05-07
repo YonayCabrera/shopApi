@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import shopApi.domain.Customer;
 import shopApi.domain.CustomerDTO;
+import shopApi.domain.Roles;
+import shopApi.domain.User;
 import shopApi.services.customerServices.*;
 import shopApi.services.userServices.CheckKey;
 
@@ -39,7 +41,11 @@ public class CustomerController {
 
     @GetMapping("/customers")
     public List<CustomerDTO> allCustomers(@RequestParam(value = "token") String token) {
-        if (checkToken.execute(token)) {
+        User user = checkToken.execute(token);
+
+        if ((user.getRole().equals(Roles.USER.toString()) ||
+                user.getRole().equals(Roles.ADMIN.toString()))) {
+
             return getAllCustomers.execute().stream().map(Customer::toDTO).collect(Collectors.toList());
         }
         return null;
@@ -50,7 +56,11 @@ public class CustomerController {
     public void updateCustomer(@PathVariable("id") int id,
                                @RequestBody CustomerDTO customerDTO,
                                @RequestParam(value = "token") String token) {
-        if (checkToken.execute(token)) {
+        User user = checkToken.execute(token);
+
+        if (user.getRole().equals(Roles.USER.toString()) ||
+                user.getRole().equals(Roles.ADMIN.toString())) {
+
             updateCustomer.execute(id, customerDTO);
         }
     }
@@ -58,7 +68,11 @@ public class CustomerController {
     @GetMapping("/customers/{id}")
     public CustomerDTO getCustomer(@PathVariable("id") int id,
                                    @RequestParam(value = "token") String token) {
-        if (checkToken.execute(token)) {
+
+        User user = checkToken.execute(token);
+
+        if (user.getRole().equals(Roles.USER.toString()) ||
+                user.getRole().equals(Roles.ADMIN.toString())) {
             return getCustomer.execute(id).toDTO();
         }
         return null;
@@ -67,7 +81,11 @@ public class CustomerController {
     @DeleteMapping("/customers/{id}")
     public void deleteCustomer(@PathVariable("id") int customerId,
                                @RequestParam(value = "token") String token) {
-        if (checkToken.execute(token)) {
+
+        User user = checkToken.execute(token);
+
+        if (user.getRole().equals(Roles.USER.toString()) ||
+                user.getRole().equals(Roles.ADMIN.toString())) {
             deleteCustomer.execute(customerId);
         }
     }
@@ -76,7 +94,11 @@ public class CustomerController {
     @PostMapping("/createCustomer")
     public void createCustomer(@RequestBody CustomerDTO customerDTO,
                                @RequestParam(value = "token") String token) {
-        if (checkToken.execute(token)) {
+
+        User user = checkToken.execute(token);
+
+        if (user.getRole().equals(Roles.USER.toString()) ||
+                user.getRole().equals(Roles.ADMIN.toString())) {
             createCustomer.execute(customerDTO);
         }
     }

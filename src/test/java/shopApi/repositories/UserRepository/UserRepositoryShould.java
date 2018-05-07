@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import shopApi.domain.LoginDTO;
+import shopApi.domain.Roles;
 import shopApi.domain.User;
 import shopApi.domain.UserDTO;
 import shopApi.repositories.BaseRepositoryShould;
@@ -121,7 +122,7 @@ public class UserRepositoryShould extends BaseRepositoryShould {
     }
 
     @Test
-    public void check_the_key(){
+    public void check_the_token(){
         userDTO.setPassword(hashPassword(userDTO.getPassword()));
         generateKey(userDTO);
         insertUser(userDTO);
@@ -129,9 +130,9 @@ public class UserRepositoryShould extends BaseRepositoryShould {
         loginDTO.setPassword(hashPassword(loginDTO.getPassword()));
         String key = getKey(loginDTO.getEmail(),loginDTO.getPassword());
 
-        boolean goodKey = userRepository.checkToken(key);
+        User user = userRepository.checkToken(key);
 
-        assertThat(goodKey).isEqualTo(true);
+        assertThat(user.getRole()).isEqualTo(Roles.USER.toString());
     }
 
     private User getAllUsers(){

@@ -19,5 +19,5 @@ public interface UserRepository {
 
     String verifySession(LoginDTO logDTO);
 
-    boolean checkToken(String token);
+    User checkToken(String token);
 }

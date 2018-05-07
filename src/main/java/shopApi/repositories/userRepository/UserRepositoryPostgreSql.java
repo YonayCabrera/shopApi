@@ -74,16 +74,10 @@ public class UserRepositoryPostgreSql implements UserRepository {
     }
 
     @Override
-    public boolean checkToken(String token) {
+    public User checkToken(String token) {
         final String query = "SELECT * FROM users WHERE token = '" + token +"'" ;
         try (Connection connection = sql2o.open()) {
-            User user = connection.createQuery(query).executeAndFetch(User.class).get(0);
-            if(user.getToken().length()>0){
-                return true;
-            }else{
-                return false;
-            }
-
+            return connection.createQuery(query).executeAndFetch(User.class).get(0);
         }
     }
 }

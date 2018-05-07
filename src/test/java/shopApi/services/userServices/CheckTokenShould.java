@@ -7,7 +7,7 @@ import shopApi.repositories.userRepository.UserRepository;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class CheckKeyShould {
+public class CheckTokenShould {
     private UserRepository userRepository;
     private CheckKey checkKey;
 
@@ -18,11 +18,11 @@ public class CheckKeyShould {
     }
 
     @Test
-    public void check_key(){
-        String key = "1234";
+    public void check_token(){
+        String token = "1234";
 
-        checkKey.execute(key);
+        checkKey.execute(token);
 
-        verify(userRepository).checkToken(key);
+        verify(userRepository).checkToken(token);
     }
 }
