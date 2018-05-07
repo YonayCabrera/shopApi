@@ -9,19 +9,19 @@ import static org.mockito.Mockito.verify;
 
 public class CheckTokenShould {
     private UserRepository userRepository;
-    private CheckKey checkKey;
+    private CheckToken checkToken;
 
     @Before
     public void setUp() throws Exception {
         userRepository = mock(UserRepository.class);
-        checkKey = new CheckKey(userRepository);
+        checkToken = new CheckToken(userRepository);
     }
 
     @Test
     public void check_token(){
         String token = "1234";
 
-        checkKey.execute(token);
+        checkToken.execute(token);
 
         verify(userRepository).checkToken(token);
     }

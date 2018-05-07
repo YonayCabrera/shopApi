@@ -6,11 +6,11 @@ import shopApi.domain.User;
 import shopApi.repositories.userRepository.UserRepository;
 
 @Service
-public class CheckKey {
+public class CheckToken {
     private UserRepository userRepository;
 
     @Autowired
-    public CheckKey(UserRepository userRepository) {
+    public CheckToken(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 

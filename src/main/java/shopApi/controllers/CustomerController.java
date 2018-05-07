@@ -8,7 +8,7 @@ import shopApi.domain.CustomerDTO;
 import shopApi.domain.Roles;
 import shopApi.domain.User;
 import shopApi.services.customerServices.*;
-import shopApi.services.userServices.CheckKey;
+import shopApi.services.userServices.CheckToken;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -21,7 +21,7 @@ public class CustomerController {
     private GetCustomer getCustomer;
     private DeleteCustomer deleteCustomer;
     private CreateCustomer createCustomer;
-    private CheckKey checkToken;
+    private CheckToken checkToken;
 
     @Autowired
     public CustomerController(GetAllCustomers getAllCustomers,
@@ -29,7 +29,7 @@ public class CustomerController {
                               GetCustomer getCustomer,
                               DeleteCustomer deleteCustomer,
                               CreateCustomer createCustomer,
-                              CheckKey checkToken) {
+                              CheckToken checkToken) {
 
         this.getAllCustomers = getAllCustomers;
         this.updateCustomer = updateCustomer;
