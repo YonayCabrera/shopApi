@@ -33,7 +33,7 @@ public class UserController {
     @GetMapping("/users")
     public List<UserDTO> getAllUsers(@RequestParam(value = "token") String token) {
         User user = checkToken.execute(token);
-
+        System.out.println(user.getRole());
         if ((user.getRole().equals(Roles.ADMIN.toString()))) {
             return getAllUsers.execute().stream().map(User::toDTO).collect(Collectors.toList());
         }
