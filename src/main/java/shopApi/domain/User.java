@@ -41,4 +41,8 @@ public class User {
     public String getKey() {
         return key;
     }
+
+    public UserDTO toDTO() {
+        return new UserDTO(id,name,password,email,role,key);
+    }
 }

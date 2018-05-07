@@ -29,7 +29,7 @@ public class UpdateUserShould {
                 "user@gmail.com",
                 Roles.USER.toString(),
                 "1234");
-        UserDTO newUser = new UserDTO(
+        UserDTO newUser = new UserDTO(1,
                 "newUser",
                 "newUser123",
                 "user@gmail.com",

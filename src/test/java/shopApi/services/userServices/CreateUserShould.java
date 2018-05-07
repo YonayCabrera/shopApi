@@ -21,7 +21,7 @@ public class CreateUserShould {
 
     @Test
     public void add_user(){
-        UserDTO userDTO = new UserDTO("name",
+        UserDTO userDTO = new UserDTO(1,"name",
                 "password",
                 "email",
                 "user",

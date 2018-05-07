@@ -10,6 +10,7 @@ import shopApi.services.userServices.GetAllUsers;
 import shopApi.services.userServices.UpdateUser;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 public class UserController {
@@ -30,8 +31,8 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public List<User> getAllUsers() {
-        return getAllUsers.execute();
+    public List<UserDTO> getAllUsers() {
+        return getAllUsers.execute().stream().map(User::toDTO).collect(Collectors.toList());
     }
 
     @ResponseBody

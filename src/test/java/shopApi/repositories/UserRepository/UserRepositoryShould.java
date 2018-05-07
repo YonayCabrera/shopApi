@@ -30,7 +30,7 @@ public class UserRepositoryShould extends BaseRepositoryShould {
     public void given_a_repository_and_a_database() {
         connection = new Sql2o(connectionTestDatabase, dbUser, dbPassword);
         userRepository = new UserRepositoryPostgreSql(connectionTestDatabase);
-        userDTO = new UserDTO("user",
+        userDTO = new UserDTO(1,"user",
                 "user123",
                 "user@gmail.com",
                 "user",
@@ -65,6 +65,7 @@ public class UserRepositoryShould extends BaseRepositoryShould {
     @Test
     public void remove_one_user(){
         UserDTO otherUserDTO = new UserDTO(
+                1,
                 "otherUser",
                 "user123",
                 "otherUser@gmail.com",
@@ -86,6 +87,7 @@ public class UserRepositoryShould extends BaseRepositoryShould {
     public void update_one_user(){
         insertUser(userDTO);
         UserDTO newUserDTO = new UserDTO(
+                1,
                 "otherUser",
                 "user123",
                 "otherUser@gmail.com",
