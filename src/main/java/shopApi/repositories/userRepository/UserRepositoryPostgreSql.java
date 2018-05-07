@@ -65,6 +65,12 @@ public class UserRepositoryPostgreSql implements UserRepository {
 
     @Override
     public String verifySession(LoginDTO logDTO) {
-        return null;
+        System.out.println(logDTO.getEmail());
+        final String query = "SELECT * FROM users WHERE email = '" + logDTO.getEmail() +"'" +
+                " AND password ='" + logDTO.getPassword() +"'";
+        try (Connection connection = sql2o.open()) {
+            User user = connection.createQuery(query).executeAndFetch(User.class).get(0);
+            return user.getKey();
+        }
     }
 }

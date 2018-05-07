@@ -11,6 +11,6 @@ public class LogUser {
     }
 
     public String execute(LoginDTO logDTO) {
-        return null;
+        return userRepository.verifySession(logDTO);
     }
 }

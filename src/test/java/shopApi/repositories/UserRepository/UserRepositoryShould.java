@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
+import shopApi.domain.LoginDTO;
 import shopApi.domain.User;
 import shopApi.domain.UserDTO;
 import shopApi.repositories.BaseRepositoryShould;
@@ -50,7 +51,7 @@ public class UserRepositoryShould extends BaseRepositoryShould {
 
     @Test
     public void get_all_users(){
-        String hashPassword = HashPassword(userDTO);
+        String hashPassword = hashPassword(userDTO.getPassword());
         userDTO.setPassword(hashPassword);
         insertUser(userDTO);
 
@@ -94,7 +95,7 @@ public class UserRepositoryShould extends BaseRepositoryShould {
                 "user",
                 "1234");
         int userId = getAllUsers().getId();
-        String hashPassword = HashPassword(userDTO);
+        String hashPassword = hashPassword(userDTO.getPassword());
         userDTO.setPassword(hashPassword);
 
         userRepository.updateUser(userId, newUserDTO);
@@ -104,6 +105,18 @@ public class UserRepositoryShould extends BaseRepositoryShould {
         assertThat(newUserDTO.getEmail()).isEqualTo(getAllUsers().getEmail());
         assertThat(newUserDTO.getPassword()).isEqualTo(getAllUsers().getPassword());
         assertThat(newUserDTO.getRole()).isEqualTo(getAllUsers().getRole());
+    }
+
+    @Test
+    public void return_key_when_user_log(){
+        userDTO.setPassword(hashPassword(userDTO.getPassword()));
+        insertUser(userDTO);
+        LoginDTO loginDTO = new LoginDTO("user@gmail.com","user123");
+        loginDTO.setPassword(hashPassword(loginDTO.getPassword()));
+
+        String key = userRepository.verifySession(loginDTO);
+
+        assertThat(userDTO.getKey()).isEqualTo(key);
     }
 
     private User getAllUsers(){
@@ -126,9 +139,9 @@ public class UserRepositoryShould extends BaseRepositoryShould {
         }
     }
 
-    private String HashPassword(UserDTO userDTO) {
+    private String hashPassword(String password) {
         return Hashing.sha256()
-                .hashString(userDTO.getPassword(), StandardCharsets.UTF_8)
+                .hashString(password, StandardCharsets.UTF_8)
                 .toString();
     }
 }
