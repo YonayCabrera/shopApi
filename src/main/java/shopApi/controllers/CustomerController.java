@@ -34,13 +34,16 @@ public class CustomerController {
     }
 
     @GetMapping("/customers")
-    public List<CustomerDTO> allCustomers() {
+    public List<CustomerDTO> allCustomers(@RequestParam(value = "token") String key) {
+        System.out.println(key);
         return getAllCustomers.execute().stream().map(Customer::toDTO).collect(Collectors.toList());
     }
 
     @ResponseBody
     @PutMapping("/customers/{id}")
-    public void updateCustomer(@PathVariable("id") int id, @RequestBody CustomerDTO customerDTO) {
+    public void updateCustomer(@PathVariable("id") int id,
+                               @RequestBody CustomerDTO customerDTO
+                               ) {
         updateCustomer.execute(id,customerDTO);
     }
 

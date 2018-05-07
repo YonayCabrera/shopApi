@@ -73,4 +73,9 @@ public class UserRepositoryPostgreSql implements UserRepository {
             return user.getKey();
         }
     }
+
+    @Override
+    public boolean checkKey() {
+        return false;
+    }
 }

@@ -18,4 +18,6 @@ public interface UserRepository {
     void updateUser(int userId, UserDTO userDTO);
 
     String verifySession(LoginDTO logDTO);
+
+    boolean checkKey();
 }
