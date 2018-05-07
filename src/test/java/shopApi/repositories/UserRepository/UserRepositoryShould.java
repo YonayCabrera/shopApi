@@ -30,7 +30,11 @@ public class UserRepositoryShould extends BaseRepositoryShould {
     public void given_a_repository_and_a_database() {
         connection = new Sql2o(connectionTestDatabase, dbUser, dbPassword);
         userRepository = new UserRepositoryPostgreSql(connectionTestDatabase);
-        userDTO = new UserDTO("user","user123","user@gmail.com","user");
+        userDTO = new UserDTO("user",
+                "user123",
+                "user@gmail.com",
+                "user",
+                "1234");
     }
 
     @Test
@@ -61,7 +65,11 @@ public class UserRepositoryShould extends BaseRepositoryShould {
     @Test
     public void remove_one_user(){
         UserDTO otherUserDTO = new UserDTO(
-                "otherUser","user123","otherUser@gmail.com","user");
+                "otherUser",
+                "user123",
+                "otherUser@gmail.com",
+                "user",
+                "1234");
         insertUser(userDTO);
         insertUser(otherUserDTO);
 
@@ -78,7 +86,11 @@ public class UserRepositoryShould extends BaseRepositoryShould {
     public void update_one_user(){
         insertUser(userDTO);
         UserDTO newUserDTO = new UserDTO(
-                "otherUser","user123","otherUser@gmail.com","user");
+                "otherUser",
+                "user123",
+                "otherUser@gmail.com",
+                "user",
+                "1234");
         int userId = getAllUsers().getId();
         String hashPassword = HashPassword(userDTO);
         userDTO.setPassword(hashPassword);
@@ -102,12 +114,13 @@ public class UserRepositoryShould extends BaseRepositoryShould {
 
     private void insertUser(UserDTO userDTO) {
         try (Connection connection = this.connection.open()) {
-            connection.createQuery("INSERT INTO users(name, email, password, role)" +
-                    " VALUES (:name, :email, :password, :role)")
+            connection.createQuery("INSERT INTO users(name, email, password, role, key)" +
+                    " VALUES (:name, :email, :password, :role, :key)")
                     .addParameter("name", userDTO.getName())
                     .addParameter("email", userDTO.getEmail())
                     .addParameter("password", userDTO.getPassword())
-                    .addParameter("role", userDTO.getRole()).executeUpdate();
+                    .addParameter("role", userDTO.getRole())
+                    .addParameter("key",userDTO.getKey()).executeUpdate();
         }
     }
 

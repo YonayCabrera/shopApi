@@ -20,14 +20,15 @@ public class UserRepositoryPostgreSql implements UserRepository {
 
     @Override
     public void save(UserDTO userDTO) {
-        final String query = "INSERT INTO users(name, password, email, role)" +
-                " VALUES (:name, :password, :email, :role)";
+        final String query = "INSERT INTO users(name, password, email, role, key)" +
+                " VALUES (:name, :password, :email, :role, :key)";
         try (Connection connection = sql2o.open()) {
             connection.createQuery(query)
                     .addParameter("name", userDTO.getName())
                     .addParameter("password", userDTO.getPassword())
                     .addParameter("email", userDTO.getEmail())
-                    .addParameter("role", userDTO.getRole()).executeUpdate();
+                    .addParameter("role", userDTO.getRole())
+                    .addParameter("key", userDTO.getKey()).executeUpdate();
         }
     }
 

@@ -21,7 +21,11 @@ public class CreateUserShould {
 
     @Test
     public void add_user(){
-        UserDTO userDTO = new UserDTO("name","password", "email", "user");
+        UserDTO userDTO = new UserDTO("name",
+                "password",
+                "email",
+                "user",
+                "1234");
 
         createUser.execute(userDTO);
 

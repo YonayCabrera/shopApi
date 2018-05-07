@@ -26,7 +26,8 @@ public class DeleteUserShould {
                 "user",
                 "user123",
                 "user@gmail.com",
-                Roles.USER);
+                Roles.USER.toString(),
+                "1234");
         deleteUser.execute(user.getId());
 
         verify(userRepository).deleteUser(user.getId());

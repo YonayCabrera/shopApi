@@ -1,18 +1,21 @@
 package shopApi.domain;
 
 public class User {
+    private String role;
+    private String key;
     private int id;
     private final String name;
     private final String password;
     private final String email;
-    private final Roles role;
 
-    public User(int id, String name, String password, String email, Roles role) {
+
+    public User(int id, String name, String password, String email, String role, String key) {
         this.id = id;
         this.name = name;
         this.password = password;
         this.email = email;
         this.role = role;
+        this.key = key;
     }
 
     public int getId() {
@@ -31,7 +34,11 @@ public class User {
         return email;
     }
 
-    public Roles getRole() {
+    public String getRole() {
         return role;
+    }
+
+    public String getKey() {
+        return key;
     }
 }

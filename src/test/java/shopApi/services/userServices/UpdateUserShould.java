@@ -27,12 +27,14 @@ public class UpdateUserShould {
                 "user",
                 "user123",
                 "user@gmail.com",
-                Roles.USER);
+                Roles.USER.toString(),
+                "1234");
         UserDTO newUser = new UserDTO(
                 "newUser",
                 "newUser123",
                 "user@gmail.com",
-                "user");
+                Roles.USER.toString(),
+                "1234");
 
         updateUser.execute(user.getId(),newUser);
 
