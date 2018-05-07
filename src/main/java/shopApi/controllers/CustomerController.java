@@ -8,6 +8,7 @@ import shopApi.domain.CustomerDTO;
 import shopApi.services.customerServices.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 public class CustomerController {
@@ -33,8 +34,8 @@ public class CustomerController {
     }
 
     @GetMapping("/customers")
-    public List<Customer> allCustomers() {
-        return getAllCustomers.execute();
+    public List<CustomerDTO> allCustomers() {
+        return getAllCustomers.execute().stream().map(Customer::toDTO).collect(Collectors.toList());
     }
 
     @ResponseBody
