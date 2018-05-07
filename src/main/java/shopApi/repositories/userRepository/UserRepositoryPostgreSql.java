@@ -2,6 +2,7 @@ package shopApi.repositories.userRepository;
 
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
+import shopApi.domain.LoginDTO;
 import shopApi.domain.User;
 import shopApi.domain.UserDTO;
 
@@ -60,5 +61,10 @@ public class UserRepositoryPostgreSql implements UserRepository {
                     .addParameter("role", newUserDTO.getRole())
                     .addParameter("id", userId).executeUpdate();
         }
+    }
+
+    @Override
+    public String verifySession(LoginDTO logDTO) {
+        return null;
     }
 }

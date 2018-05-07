@@ -1,6 +1,7 @@
 package shopApi.repositories.userRepository;
 
 import org.springframework.stereotype.Repository;
+import shopApi.domain.LoginDTO;
 import shopApi.domain.User;
 import shopApi.domain.UserDTO;
 
@@ -15,4 +16,6 @@ public interface UserRepository {
     void deleteUser(int userId);
 
     void updateUser(int userId, UserDTO userDTO);
+
+    String verifySession(LoginDTO logDTO);
 }
