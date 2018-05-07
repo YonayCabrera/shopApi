@@ -14,7 +14,6 @@ public class CheckKey {
     }
 
     public boolean execute(String key) {
-        userRepository.checkKey(key);
-        return false;
+        return userRepository.checkKey(key);
     }
 }

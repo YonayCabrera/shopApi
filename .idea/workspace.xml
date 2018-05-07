@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e60221ac-ddfb-48fe-ba1a-97094b551d2e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/docker/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/repositories/userRepository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/repositories/userRepository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/repositories/userRepository/UserRepositoryPostgreSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/repositories/userRepository/UserRepositoryPostgreSql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CheckKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CheckKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/repositories/UserRepository/UserRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/repositories/UserRepository/UserRepositoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/CheckKeyShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/CheckKeyShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,11 +71,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserRepositoryShould.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1469">
+              <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserRepositoryShould.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/repositories/UserRepository/UserRepositoryShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="123" column="20" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
+            <state relative-caret-position="-480">
+              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5917#5918#0" expanded="true" />
@@ -150,12 +158,13 @@
       <file leaf-file-name="CheckKey.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CheckKey.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state relative-caret-position="207">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#219#220#0" expanded="true" />
                 <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,18 +175,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/userRepository/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -258,13 +255,13 @@
         <option value="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CreateUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/LogUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/repositories/userRepository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CheckKey.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/CheckKeyShould.java" />
         <option value="$PROJECT_DIR$/src/main/docker/init.sql" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/repositories/userRepository/UserRepositoryPostgreSql.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/repositories/UserRepository/UserRepositoryShould.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CheckKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java" />
       </list>
     </option>
   </component>
@@ -586,7 +583,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in shopApi">
+  <component name="RunManager" selected="Spring Boot.ShopApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -750,9 +747,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ShopApplication" />
         <item itemvalue="JUnit.All in shopApi" />
         <item itemvalue="JUnit.UserRepositoryShould.check_the_key" />
-        <item itemvalue="Spring Boot.ShopApplication" />
         <item itemvalue="JUnit.UserRepositoryShould.return_key_when_user_log" />
         <item itemvalue="JUnit.UserRepositoryShould" />
       </list>
@@ -781,23 +778,11 @@
       <workItem from="1525705851638" duration="26000" />
       <workItem from="1525707547548" duration="47000" />
       <workItem from="1525707633155" duration="43000" />
-      <workItem from="1525716809712" duration="2403000" />
+      <workItem from="1525716809712" duration="3023000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserRepositoryShould_return_key_when_user_log - 2018.05.07 at 12h 20m 31s.xml">
-      <configuration name="UserRepositoryShould.return_key_when_user_log" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserRepositoryShould_return_key_when_user_log - 2018.05.07 at 12h 24m 35s.xml">
-      <configuration name="UserRepositoryShould.return_key_when_user_log" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserRepositoryShould_return_key_when_user_log - 2018.05.07 at 12h 24m 48s.xml">
-      <configuration name="UserRepositoryShould.return_key_when_user_log" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserRepositoryShould_return_key_when_user_log - 2018.05.07 at 12h 29m 26s.xml">
-      <configuration name="UserRepositoryShould.return_key_when_user_log" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserRepositoryShould_return_key_when_user_log - 2018.05.07 at 12h 49m 15s.xml">
       <configuration name="UserRepositoryShould.return_key_when_user_log" configurationId="JUnit" />
     </history-entry>
@@ -816,9 +801,21 @@
     <history-entry file="All_in_shopApi - 2018.05.07 at 19h 29m 22s.xml">
       <configuration name="All in shopApi" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserRepositoryShould_check_the_key - 2018.05.07 at 20h 11m 51s.xml">
+      <configuration name="UserRepositoryShould.check_the_key" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRepositoryShould_check_the_key - 2018.05.07 at 20h 12m 07s.xml">
+      <configuration name="UserRepositoryShould.check_the_key" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shopApi - 2018.05.07 at 20h 12m 52s.xml">
+      <configuration name="All in shopApi" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shopApi - 2018.05.07 at 20h 17m 22s.xml">
+      <configuration name="All in shopApi" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76131000" />
+    <option name="totallyTimeSpent" value="76751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
@@ -842,11 +839,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3877841" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3877841" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2911932" />
-      <window_info anchor="bottom" id="Database Console" order="9" visible="true" weight="0.32954547" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49788135" visible="true" weight="0.2935657" />
+      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32954547" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49788135" visible="true" weight="0.2935657" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -1130,16 +1127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-123">
@@ -1199,18 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CheckKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://57b40e57-c2cb-44ae-a94c-3c2e99f5448f/database/shoptheam/schema/public/table/users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1237,12 +1212,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/repositories/UserRepository/UserRepositoryShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="123" column="20" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
+        <state relative-caret-position="-480">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5917#5918#0" expanded="true" />
             <element signature="e#5999#6000#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CheckKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1469">
+          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
