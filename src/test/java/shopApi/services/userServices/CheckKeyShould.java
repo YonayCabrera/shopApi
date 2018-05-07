@@ -19,8 +19,10 @@ public class CheckKeyShould {
 
     @Test
     public void check_key(){
-        checkKey.execute();
+        String key = "1234";
 
-        verify(userRepository).checkKey();
+        checkKey.execute(key);
+
+        verify(userRepository).checkKey(key);
     }
 }

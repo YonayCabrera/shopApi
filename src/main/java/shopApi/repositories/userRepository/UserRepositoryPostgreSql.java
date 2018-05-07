@@ -65,7 +65,6 @@ public class UserRepositoryPostgreSql implements UserRepository {
 
     @Override
     public String verifySession(LoginDTO logDTO) {
-        System.out.println(logDTO.getEmail());
         final String query = "SELECT * FROM users WHERE email = '" + logDTO.getEmail() +"'" +
                 " AND password ='" + logDTO.getPassword() +"'";
         try (Connection connection = sql2o.open()) {
@@ -75,7 +74,16 @@ public class UserRepositoryPostgreSql implements UserRepository {
     }
 
     @Override
-    public boolean checkKey() {
-        return false;
+    public boolean checkKey(String key) {
+        final String query = "SELECT * FROM users WHERE key = '" + key +"'" ;
+        try (Connection connection = sql2o.open()) {
+            User user = connection.createQuery(query).executeAndFetch(User.class).get(0);
+            if(user.getKey().length()>0){
+                return true;
+            }else{
+                return false;
+            }
+
+        }
     }
 }

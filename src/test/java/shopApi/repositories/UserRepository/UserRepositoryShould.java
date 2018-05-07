@@ -12,6 +12,7 @@ import shopApi.repositories.BaseRepositoryShould;
 import shopApi.repositories.userRepository.UserRepositoryPostgreSql;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Date;
 import java.util.List;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
@@ -119,6 +120,20 @@ public class UserRepositoryShould extends BaseRepositoryShould {
         assertThat(userDTO.getKey()).isEqualTo(key);
     }
 
+    @Test
+    public void check_the_key(){
+        userDTO.setPassword(hashPassword(userDTO.getPassword()));
+        generateKey(userDTO);
+        insertUser(userDTO);
+        LoginDTO loginDTO = new LoginDTO("user@gmail.com","user123");
+        loginDTO.setPassword(hashPassword(loginDTO.getPassword()));
+        String key = getKey(loginDTO.getEmail(),loginDTO.getPassword());
+
+        boolean goodKey = userRepository.checkKey(key);
+
+        assertThat(goodKey).isEqualTo(true);
+    }
+
     private User getAllUsers(){
         try (Connection connection = this.connection.open()) {
             return connection.createQuery("Select * from users")
@@ -137,6 +152,19 @@ public class UserRepositoryShould extends BaseRepositoryShould {
                     .addParameter("role", userDTO.getRole())
                     .addParameter("key",userDTO.getKey()).executeUpdate();
         }
+    }
+
+    private String getKey(String email,String password){
+        final String query = "SELECT * FROM users WHERE email = '" + email +"'" +
+                " AND password ='" + password +"'";
+        try (Connection connection = this.connection.open()) {
+            User user = connection.createQuery(query).executeAndFetch(User.class).get(0);
+            return user.getKey();
+        }
+    }
+
+    private void generateKey(UserDTO userDTO){
+        userDTO.setKey(hashPassword(String.valueOf(new Date().getTime())));
     }
 
     private String hashPassword(String password) {

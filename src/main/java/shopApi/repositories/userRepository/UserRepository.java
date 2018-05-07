@@ -19,5 +19,5 @@ public interface UserRepository {
 
     String verifySession(LoginDTO logDTO);
 
-    boolean checkKey();
+    boolean checkKey(String key);
 }

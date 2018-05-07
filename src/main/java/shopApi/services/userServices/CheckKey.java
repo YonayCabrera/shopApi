@@ -13,8 +13,8 @@ public class CheckKey {
         this.userRepository = userRepository;
     }
 
-    public boolean execute() {
-        userRepository.checkKey();
+    public boolean execute(String key) {
+        userRepository.checkKey(key);
         return false;
     }
 }
