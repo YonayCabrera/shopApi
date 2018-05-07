@@ -23,6 +23,6 @@ public class CheckKeyShould {
 
         checkKey.execute(key);
 
-        verify(userRepository).checkKey(key);
+        verify(userRepository).checkToken(key);
     }
 }

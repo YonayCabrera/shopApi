@@ -19,7 +19,7 @@ public class CustomerController {
     private GetCustomer getCustomer;
     private DeleteCustomer deleteCustomer;
     private CreateCustomer createCustomer;
-    private CheckKey checkKey;
+    private CheckKey checkToken;
 
     @Autowired
     public CustomerController(GetAllCustomers getAllCustomers,
@@ -27,19 +27,19 @@ public class CustomerController {
                               GetCustomer getCustomer,
                               DeleteCustomer deleteCustomer,
                               CreateCustomer createCustomer,
-                              CheckKey checkKey) {
+                              CheckKey checkToken) {
 
         this.getAllCustomers = getAllCustomers;
         this.updateCustomer = updateCustomer;
         this.getCustomer = getCustomer;
         this.deleteCustomer = deleteCustomer;
         this.createCustomer = createCustomer;
-        this.checkKey = checkKey;
+        this.checkToken = checkToken;
     }
 
     @GetMapping("/customers")
-    public List<CustomerDTO> allCustomers(@RequestParam(value = "key") String key) {
-        if (checkKey.execute(key)) {
+    public List<CustomerDTO> allCustomers(@RequestParam(value = "token") String token) {
+        if (checkToken.execute(token)) {
             return getAllCustomers.execute().stream().map(Customer::toDTO).collect(Collectors.toList());
         }
         return null;
@@ -49,16 +49,16 @@ public class CustomerController {
     @PutMapping("/customers/{id}")
     public void updateCustomer(@PathVariable("id") int id,
                                @RequestBody CustomerDTO customerDTO,
-                               @RequestParam(value = "key") String key) {
-        if (checkKey.execute(key)) {
+                               @RequestParam(value = "token") String token) {
+        if (checkToken.execute(token)) {
             updateCustomer.execute(id, customerDTO);
         }
     }
 
     @GetMapping("/customers/{id}")
     public CustomerDTO getCustomer(@PathVariable("id") int id,
-                                   @RequestParam(value = "key") String key) {
-        if (checkKey.execute(key)) {
+                                   @RequestParam(value = "token") String token) {
+        if (checkToken.execute(token)) {
             return getCustomer.execute(id).toDTO();
         }
         return null;
@@ -66,8 +66,8 @@ public class CustomerController {
 
     @DeleteMapping("/customers/{id}")
     public void deleteCustomer(@PathVariable("id") int customerId,
-                               @RequestParam(value = "key") String key) {
-        if (checkKey.execute(key)) {
+                               @RequestParam(value = "token") String token) {
+        if (checkToken.execute(token)) {
             deleteCustomer.execute(customerId);
         }
     }
@@ -75,8 +75,8 @@ public class CustomerController {
     @ResponseBody
     @PostMapping("/createCustomer")
     public void createCustomer(@RequestBody CustomerDTO customerDTO,
-                               @RequestParam(value = "key") String key) {
-        if (checkKey.execute(key)) {
+                               @RequestParam(value = "token") String token) {
+        if (checkToken.execute(token)) {
             createCustomer.execute(customerDTO);
         }
     }

@@ -6,15 +6,15 @@ public class UserDTO {
     private String password;
     private String email;
     private String role;
-    private String key;
+    private String token;
 
-    public UserDTO(int id,String name, String password, String email, String role, String key) {
+    public UserDTO(int id,String name, String password, String email, String role, String token) {
         this.id = id;
         this.name = name;
         this.password = password;
         this.email = email;
         this.role = role;
-        this.key = key;
+        this.token = token;
     }
 
     public UserDTO(){
@@ -36,8 +36,8 @@ public class UserDTO {
         return role;
     }
 
-    public String getKey() {
-        return key;
+    public String getToken() {
+        return token;
     }
 
     public int getId() {
@@ -48,7 +48,7 @@ public class UserDTO {
         this.password = password;
     }
 
-    public void setKey(String key) {
-        this.key = key;
+    public void setToken(String token) {
+        this.token = token;
     }
 }

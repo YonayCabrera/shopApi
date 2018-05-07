@@ -33,6 +33,6 @@ public class CreateUser {
     }
 
     private void generateKey(UserDTO userDTO){
-        userDTO.setKey(hashPassword(String.valueOf(new Date().getTime())));
+        userDTO.setToken(hashPassword(String.valueOf(new Date().getTime())));
     }
 }

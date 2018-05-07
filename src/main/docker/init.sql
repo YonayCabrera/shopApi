@@ -14,7 +14,7 @@ CREATE TABLE public.users
     email TEXT NOT NULL,
     password TEXT NOT NULL,
     role varchar(20) NOT NULL
-    key TEXT NOT NULL
+    token TEXT NOT NULL
 );
 CREATE UNIQUE INDEX users_id_uindex ON public.users (id);
 CREATE UNIQUE INDEX users_email_uindex ON public.users (email);

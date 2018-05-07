@@ -117,7 +117,7 @@ public class UserRepositoryShould extends BaseRepositoryShould {
 
         String key = userRepository.verifySession(loginDTO);
 
-        assertThat(userDTO.getKey()).isEqualTo(key);
+        assertThat(userDTO.getToken()).isEqualTo(key);
     }
 
     @Test
@@ -129,7 +129,7 @@ public class UserRepositoryShould extends BaseRepositoryShould {
         loginDTO.setPassword(hashPassword(loginDTO.getPassword()));
         String key = getKey(loginDTO.getEmail(),loginDTO.getPassword());
 
-        boolean goodKey = userRepository.checkKey(key);
+        boolean goodKey = userRepository.checkToken(key);
 
         assertThat(goodKey).isEqualTo(true);
     }
@@ -144,13 +144,13 @@ public class UserRepositoryShould extends BaseRepositoryShould {
 
     private void insertUser(UserDTO userDTO) {
         try (Connection connection = this.connection.open()) {
-            connection.createQuery("INSERT INTO users(name, email, password, role, key)" +
-                    " VALUES (:name, :email, :password, :role, :key)")
+            connection.createQuery("INSERT INTO users(name, email, password, role, token)" +
+                    " VALUES (:name, :email, :password, :role, :token)")
                     .addParameter("name", userDTO.getName())
                     .addParameter("email", userDTO.getEmail())
                     .addParameter("password", userDTO.getPassword())
                     .addParameter("role", userDTO.getRole())
-                    .addParameter("key",userDTO.getKey()).executeUpdate();
+                    .addParameter("token",userDTO.getToken()).executeUpdate();
         }
     }
 
@@ -159,12 +159,12 @@ public class UserRepositoryShould extends BaseRepositoryShould {
                 " AND password ='" + password +"'";
         try (Connection connection = this.connection.open()) {
             User user = connection.createQuery(query).executeAndFetch(User.class).get(0);
-            return user.getKey();
+            return user.getToken();
         }
     }
 
     private void generateKey(UserDTO userDTO){
-        userDTO.setKey(hashPassword(String.valueOf(new Date().getTime())));
+        userDTO.setToken(hashPassword(String.valueOf(new Date().getTime())));
     }
 
     private String hashPassword(String password) {

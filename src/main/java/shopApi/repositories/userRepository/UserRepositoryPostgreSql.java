@@ -21,15 +21,15 @@ public class UserRepositoryPostgreSql implements UserRepository {
 
     @Override
     public void save(UserDTO userDTO) {
-        final String query = "INSERT INTO users(name, password, email, role, key)" +
-                " VALUES (:name, :password, :email, :role, :key)";
+        final String query = "INSERT INTO users(name, password, email, role, token)" +
+                " VALUES (:name, :password, :email, :role, :token)";
         try (Connection connection = sql2o.open()) {
             connection.createQuery(query)
                     .addParameter("name", userDTO.getName())
                     .addParameter("password", userDTO.getPassword())
                     .addParameter("email", userDTO.getEmail())
                     .addParameter("role", userDTO.getRole())
-                    .addParameter("key", userDTO.getKey()).executeUpdate();
+                    .addParameter("token", userDTO.getToken()).executeUpdate();
         }
     }
 
@@ -69,16 +69,16 @@ public class UserRepositoryPostgreSql implements UserRepository {
                 " AND password ='" + logDTO.getPassword() +"'";
         try (Connection connection = sql2o.open()) {
             User user = connection.createQuery(query).executeAndFetch(User.class).get(0);
-            return user.getKey();
+            return user.getToken();
         }
     }
 
     @Override
-    public boolean checkKey(String key) {
-        final String query = "SELECT * FROM users WHERE key = '" + key +"'" ;
+    public boolean checkToken(String token) {
+        final String query = "SELECT * FROM users WHERE token = '" + token +"'" ;
         try (Connection connection = sql2o.open()) {
             User user = connection.createQuery(query).executeAndFetch(User.class).get(0);
-            if(user.getKey().length()>0){
+            if(user.getToken().length()>0){
                 return true;
             }else{
                 return false;
