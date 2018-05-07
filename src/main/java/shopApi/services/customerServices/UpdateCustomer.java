@@ -16,6 +16,8 @@ public class UpdateCustomer {
     }
 
     public void execute(int id, CustomerDTO customerDTO) {
-        customerRepository.update(id, customerDTO);
+        if (!customerDTO.getName().equals("") || !customerDTO.getSurname().equals("")) {
+            customerRepository.update(id, customerDTO);
+        }
     }
 }

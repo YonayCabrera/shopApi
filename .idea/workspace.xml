@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e60221ac-ddfb-48fe-ba1a-97094b551d2e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/domain/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/domain/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/repositories/UserRepository/UserRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/repositories/UserRepository/UserRepositoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/CreateUserShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/CreateUserShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/UpdateUserShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/UpdateUserShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO-LIST" beforeDir="false" afterPath="$PROJECT_DIR$/TODO-LIST" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/CreateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/CreateCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/UpdateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/UpdateCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/DeleteCustomerShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/DeleteCustomerShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/UpdateCustomerShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/UpdateCustomerShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,11 +75,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="TODO-LIST" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TODO-LIST">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#1168#1169#0" expanded="true" />
+                <element signature="e#1229#1230#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerDTO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/CustomerDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateCustomerShould.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/UpdateCustomerShould.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteCustomerShould.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/DeleteCustomerShould.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+            <state relative-caret-position="290">
+              <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1519#1520#0" expanded="true" />
@@ -89,70 +150,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java">
+      <file leaf-file-name="UpdateCustomer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/UpdateCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-              <folding>
-                <element signature="e#1168#1169#0" expanded="true" />
-                <element signature="e#1200#1201#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="308">
+              <caret line="17" column="58" lean-forward="true" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/CustomerDTO.java">
+      <file leaf-file-name="CreateCustomer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/CreateCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/UserDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRepositoryShould.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/repositories/UserRepository/UserRepositoryShould.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateCustomerShould.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/UpdateCustomerShould.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateUserShould.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/userServices/CreateUserShould.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="308">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -169,40 +180,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-              <folding>
-                <element signature="e#804#805#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#880#881#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -225,10 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/shopApi/services/CreateCustomerService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/shopApi/services/CreateCustomerServiceShould.java" />
-        <option value="$PROJECT_DIR$/src/main/java/shopApi/services/DeleteCustomerService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/shopApi/services/DeleteCustomerServiceShould.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/repositories/ShopRepositoryShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/repositories/ShopRepositoryPostgreSql.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/services/UpdateCustomerService.java" />
@@ -259,15 +239,12 @@
         <option value="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CreateUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/domains/UserDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/UpdateUser.java" />
-        <option value="$PROJECT_DIR$/TODO-LIST" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/domain/Rules.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/DeleteUserShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/repositories/userRepository/UserRepositoryPostgreSql.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/CreateCustomerShould.java" />
-        <option value="$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/repositories/CustomerRepository/CustomerRepositoryShould.java" />
-        <option value="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/UpdateCustomerShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/domain/CustomerDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/CreateUserShould.java" />
@@ -276,6 +253,13 @@
         <option value="$PROJECT_DIR$/src/test/java/shopApi/repositories/UserRepository/UserRepositoryShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/domain/UserDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/TODO-LIST" />
+        <option value="$PROJECT_DIR$/src/main/java/shopApi/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/CreateCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/UpdateCustomer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/DeleteCustomerShould.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/UpdateCustomerShould.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java" />
       </list>
     </option>
   </component>
@@ -375,17 +359,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shopApi" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-              <item name="userRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
@@ -395,12 +369,86 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shopApi" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="customerServices" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopApi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+              <item name="CustomerRepository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+              <item name="UserRepository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="customerServices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="userServices" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -722,9 +770,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_shopApi - 2018.05.06 at 11h 04m 58s.xml">
-      <configuration name="All in shopApi" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DeleteUserShould - 2018.05.06 at 11h 14m 32s.xml">
       <configuration name="DeleteUserShould" configurationId="JUnit" />
     </history-entry>
@@ -752,12 +797,16 @@
     <history-entry file="All_in_shopApi - 2018.05.07 at 10h 53m 40s.xml">
       <configuration name="All in shopApi" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_shopApi - 2018.05.07 at 11h 12m 08s.xml">
+      <configuration name="All in shopApi" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65986000" />
+    <option name="totallyTimeSpent" value="67259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -836,7 +885,6 @@
     <entry file="das://8521fa06-586e-4b19-aa05-3b22abf94aab/database/shoptheam/schema/public/table/customers" />
     <entry file="das://8521fa06-586e-4b19-aa05-3b22abf94aab/database/shoptheam/schema/public/table/customers" />
     <entry file="das://8521fa06-586e-4b19-aa05-3b22abf94aab/database/shoptheam/schema/public/table/customers" />
-    <entry file="das://8521fa06-586e-4b19-aa05-3b22abf94aab/database/shoptheam/schema/public/table/customers" />
     <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/GetOneCustomerShould.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -845,13 +893,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/GetCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/UpdateCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -876,13 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/CreateCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -935,23 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/DeleteCustomerShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/userRepository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/customerRepository/CustomerRepositoryPostgreSql.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -992,16 +1009,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/HomeController.java" />
     <entry file="das://57b40e57-c2cb-44ae-a94c-3c2e99f5448f/database/shoptheam/schema/public/table/users" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CreateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/UpdateUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1032,13 +1039,6 @@
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TODO-LIST">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1092,67 +1092,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/repositories/CustomerRepository/CustomerRepositoryShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/CustomerDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/UpdateCustomerShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-          <folding>
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#1565#1566#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/userServices/CreateUserShould.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/userServices/UpdateUserShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1182,10 +1125,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/repositories/CustomerRepository/CustomerRepositoryShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/UserDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="-26">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="e#1062#1063#0" expanded="true" />
             <element signature="e#1087#1088#0" expanded="true" />
@@ -1195,11 +1148,118 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+        <state relative-caret-position="260">
+          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/userRepository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CreateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/userServices/UpdateUserShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TODO-LIST">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/UpdateCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="58" lean-forward="true" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/CreateCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/DeleteCustomerShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/UpdateCustomerShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/CustomerDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>

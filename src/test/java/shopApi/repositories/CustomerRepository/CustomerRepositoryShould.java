@@ -28,7 +28,7 @@ public class CustomerRepositoryShould extends BaseRepositoryShould {
     public void given_a_repository_and_a_database() {
         connection = new Sql2o(connectionTestDatabase, dbUser, dbPassword);
         customerRepository = new CustomerRepositoryPostgreSql(connectionTestDatabase);
-        customerDTO = new CustomerDTO(1,"yonay","cabrera","image.png");
+        customerDTO = new CustomerDTO(1,"yonay","cabrera","image.png","yonay");
     }
 
     @Test
@@ -57,7 +57,8 @@ public class CustomerRepositoryShould extends BaseRepositoryShould {
                 1,
                 "jose",
                 "déniz",
-                "image.jpg");
+                "image.jpg",
+                "user1");
         insertCustomer(customerDTO);
         insertCustomer(otherCustomer);
 
@@ -76,7 +77,8 @@ public class CustomerRepositoryShould extends BaseRepositoryShould {
                 1,
                 "jose",
                 "déniz",
-                "image.jpg");
+                "image.jpg",
+                "user1");
         int customerId = getAllCustomers().getId();
 
         customerRepository.update(customerId, newCustomer);

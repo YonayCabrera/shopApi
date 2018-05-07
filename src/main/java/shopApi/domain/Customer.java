@@ -7,12 +7,14 @@ public class Customer {
     private final String name;
     private final String surname;
     private final String image;
+    private String lastChange;
 
-    public Customer(int id, String name, String surname, String image) {
+    public Customer(int id, String name, String surname, String image, String lastChange) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.image = image;
+        this.lastChange = lastChange;
     }
 
     public String getName() {
@@ -49,6 +51,6 @@ public class Customer {
     }
 
     public CustomerDTO toDTO() {
-        return new CustomerDTO(id,name,surname,image);
+        return new CustomerDTO(id,name,surname,image,lastChange);
     }
 }

@@ -25,7 +25,8 @@ public class DeleteCustomerShould {
                 1,
                 "yonay",
                 "cabrera",
-                "image.jpg");
+                "image.jpg",
+                "yonay");
         deleteCustomer.execute(customer.getId());
 
         verify(customerRepository).remove(customer.getId());

@@ -15,6 +15,8 @@ public class CreateCustomer {
     }
 
     public void execute(CustomerDTO customerDTO) {
-        customerRepository.save(customerDTO);
+        if(!customerDTO.getName().equals("") || !customerDTO.getSurname().equals("")) {
+            customerRepository.save(customerDTO);
+        }
     }
 }

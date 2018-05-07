@@ -26,12 +26,14 @@ public class UpdateCustomerShould {
                 1,
                 "yonay",
                 "cabrera",
-                "image.jpg");
+                "image.jpg",
+                "user1");
         CustomerDTO newCustomer = new CustomerDTO(
                 1,
                 "jose",
                 "deniz",
-                "image.jpg");
+                "image.jpg",
+                "user1");
 
         updateCustomer.execute(customer.getId(),newCustomer);
 
