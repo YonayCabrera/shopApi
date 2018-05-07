@@ -7,6 +7,7 @@ import shopApi.domain.UserDTO;
 import shopApi.repositories.userRepository.UserRepository;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Date;
 
 @Service
 public class CreateUser {
@@ -18,15 +19,20 @@ public class CreateUser {
     }
 
     public void execute(UserDTO userDTO) {
-        String hashPassword = HashPassword(userDTO);
+        String hashPassword = hashPassword(userDTO.getPassword());
         userDTO.setPassword(hashPassword);
+        generateKey(userDTO);
 
         userRepository.save(userDTO);
     }
 
-    private String HashPassword(UserDTO userDTO) {
+    private String hashPassword(String password) {
         return Hashing.sha256()
-                .hashString(userDTO.getPassword(), StandardCharsets.UTF_8)
+                .hashString(password, StandardCharsets.UTF_8)
                 .toString();
+    }
+
+    private void generateKey(UserDTO userDTO){
+        userDTO.setKey(hashPassword(String.valueOf(new Date().getTime())));
     }
 }
