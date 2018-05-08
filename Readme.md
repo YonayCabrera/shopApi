@@ -1,6 +1,6 @@
 # SHOP-API
 
-## BEFORE START YOU NEED POSTGRES
+## BEFORE START YOU NEED DOCKER
 
 To run your database you need install Docker before
 After that run this sentences on bash:
@@ -17,6 +17,9 @@ docker ps
 I give you Two admins to start use this api :
 - name= yonay, email = yonaycl@gmail.com, password = iamadmin
 - name= jose, email = jose@gmail.com, password = joseEsMiMeta
+
+yonay-token =c068fb95b8e64b1d775313ed5902efbe32d207e4de7876f8caf838fec6f8d18a
+jose-token =d705cb47bfe5ea17a25090bc63af957bc52298b4aedfe0f21ecbd67fe643ac8b
 
 ### FIRST YOU NEED TO LOG TO GET AUTHORIZATION TOKEN (USER AND ADMIN)
 

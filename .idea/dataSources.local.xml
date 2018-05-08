@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="shoptheam@localhost" uuid="b3d9bc35-7903-4a1f-a317-83f469b620af">
+    <data-source name="shoptheam@localhost" uuid="92a4901f-a86d-4fb4-87dd-5d9d58a8df4e">
       <database-info product="PostgreSQL" version="10.3 (Debian 10.3-1.pgdg90+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>

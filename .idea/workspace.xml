@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e60221ac-ddfb-48fe-ba1a-97094b551d2e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/services/customerServices/CreateCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shopApi/services/customerServices/CreateCustomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/services/customerServices/UpdateCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shopApi/services/customerServices/UpdateCustomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/CreateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/CreateUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/UpdateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shopApi/services/userServices/UpdateUser.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,57 +68,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="49" column="38" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="521">
-                <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="93" column="33" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="33" />
+            <state relative-caret-position="2068">
+              <caret line="104" column="9" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-              <folding>
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1423#1424#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/docker/init.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -134,10 +98,40 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="198">
+                <caret line="9" column="55" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="55" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users" pinned="false" current-in-tab="false">
+        <entry file="das://92a4901f-a86d-4fb4-87dd-5d9d58a8df4e/database/shoptheam/schema/public/table/users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CreateUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CreateUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="264">
               <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -151,7 +145,7 @@
       <file leaf-file-name="UpdateUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/UpdateUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="330">
               <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
             </state>
           </provider>
@@ -160,7 +154,7 @@
       <file leaf-file-name="LogUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/LogUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="264">
               <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
             </state>
           </provider>
@@ -210,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/DeleteUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/domains/UserDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/domain/Rules.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/DeleteUserShould.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/CreateUserShould.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/services/userServices/UpdateUserShould.java" />
@@ -247,6 +240,7 @@
         <option value="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/UpdateUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/LogUser.java" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -286,8 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -341,45 +333,15 @@
               <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopApi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="customerServices" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopApi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shopApi" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="userServices" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -696,17 +658,12 @@
       <workItem from="1525707633155" duration="43000" />
       <workItem from="1525716809712" duration="9304000" />
       <workItem from="1525771217204" duration="10853000" />
-      <workItem from="1525812597518" duration="6722000" />
+      <workItem from="1525812597518" duration="8094000" />
+      <workItem from="1525821801595" duration="298000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_shopApi - 2018.05.08 at 10h 47m 27s.xml">
-      <configuration name="All in shopApi" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_shopApi - 2018.05.08 at 11h 25m 24s.xml">
-      <configuration name="All in shopApi" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_shopApi - 2018.05.08 at 11h 27m 49s.xml">
       <configuration name="All in shopApi" configurationId="JUnit" />
     </history-entry>
@@ -731,13 +688,18 @@
     <history-entry file="All_in_shopApi - 2018.05.08 at 14h 40m 20s.xml">
       <configuration name="All in shopApi" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_shopApi - 2018.05.09 at 00h 14m 20s.xml">
+      <configuration name="All in shopApi" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shopApi - 2018.05.09 at 00h 14m 36s.xml">
+      <configuration name="All in shopApi" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100607000" />
+    <option name="totallyTimeSpent" value="102277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -787,18 +749,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="440">
-            <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="das://57b40e57-c2cb-44ae-a94c-3c2e99f5448f/database/shoptheam/schema/public/table/users" />
-    <entry file="das://57b40e57-c2cb-44ae-a94c-3c2e99f5448f/database/shoptheam/schema/public/table/users" />
     <entry file="das://57b40e57-c2cb-44ae-a94c-3c2e99f5448f/database/shoptheam/schema/public/table/users" />
     <entry file="das://57b40e57-c2cb-44ae-a94c-3c2e99f5448f/database/shoptheam/schema/public/table/users" />
     <entry file="das://57b40e57-c2cb-44ae-a94c-3c2e99f5448f/database/shoptheam/schema/public/table/users" />
@@ -887,10 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding>
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,13 +981,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://b3d9bc35-7903-4a1f-a317-83f469b620af/database/shoptheam/schema/public/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://b3d9bc35-7903-4a1f-a317-83f469b620af/database/shoptheam/schema/public/table/users" />
     <entry file="file://$PROJECT_DIR$/src/main/docker/init.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -1046,16 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="49" column="38" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="93" column="33" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,7 +1023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CreateUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="264">
           <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1098,25 +1035,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/UpdateUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="330">
           <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/userServices/LogUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="264">
           <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2068">
+          <caret line="104" column="9" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="521">
-            <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
+          <first_editor relative-caret-position="198">
+            <caret line="9" column="55" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="55" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://92a4901f-a86d-4fb4-87dd-5d9d58a8df4e/database/shoptheam/schema/public/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
