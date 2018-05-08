@@ -1,9 +1,9 @@
 # SHOP-API
 
-## POSTGRES
+## BEFORE START YOU NEED POSTGRES
 
-To run your database you need install Docker 
-And do the next sentences:
+To run your database you need install Docker before
+After that run this sentences on bash:
 
 - cd src/main/docker/
 - docker build -t shoptheam .
@@ -11,3 +11,11 @@ And do the next sentences:
 
 Finally you can verify the container with
 docker ps
+
+## HOW USE THIS API
+
+I give you Two admins to start use this api :
+- name= yonay, email = yonaycl@gmail.com, password = iamadmin
+- name= jose, email = jose@gmail.com, password = joseEsMiMeta
+
+![alt text](https://gyazo.com/90dd0f0032b8e1c8c7c97dd773450d88)
