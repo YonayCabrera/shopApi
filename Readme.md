@@ -64,7 +64,7 @@ You need to put id param and send request body like this:
 ![alt_text](https://i.gyazo.com/9df4418a9b6b7e964c8a63f91e56651c.png)
 
 
-![alt_text](https://i.gyazo.com/39bc02c341a06ec56ad5331a054f74a2.png)
+![alt_text](https://i.gyazo.com/8069587c79a44361752647065d4e0ce2.png)
 
 #### DELETE ONE USER
 

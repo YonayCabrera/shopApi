@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e60221ac-ddfb-48fe-ba1a-97094b551d2e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/docker/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/CreateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/CreateCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/UpdateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/UpdateCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/CreateUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/LogUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/LogUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/UpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/services/userServices/UpdateUser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,8 +74,8 @@
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="595">
-                <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+              <first_editor relative-caret-position="521">
+                <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
               </first_editor>
               <second_editor />
             </state>
@@ -702,7 +696,7 @@
       <workItem from="1525707633155" duration="43000" />
       <workItem from="1525716809712" duration="9304000" />
       <workItem from="1525771217204" duration="10853000" />
-      <workItem from="1525812597518" duration="6311000" />
+      <workItem from="1525812597518" duration="6722000" />
     </task>
     <servers />
   </component>
@@ -739,7 +733,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100196000" />
+    <option name="totallyTimeSpent" value="100607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
@@ -1119,8 +1113,8 @@
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="595">
-            <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+          <first_editor relative-caret-position="521">
+            <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
           </first_editor>
           <second_editor />
         </state>
