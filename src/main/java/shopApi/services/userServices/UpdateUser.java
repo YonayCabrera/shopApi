@@ -21,7 +21,7 @@ public class UpdateUser {
     }
 
     public void execute(int userId, UserDTO userDTO) {
-        if(!userDTO.getPassword().equals("") || !userDTO.getEmail().equals("")) {
+        if(!userDTO.getPassword().equals("") && !userDTO.getEmail().equals("")) {
             String hashPassword = hashPassword(userDTO.getPassword());
             userDTO.setPassword(hashPassword);
 

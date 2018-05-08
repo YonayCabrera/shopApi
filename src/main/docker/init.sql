@@ -21,8 +21,8 @@ CREATE TABLE public.users
 CREATE UNIQUE INDEX users_id_uindex ON public.users (id);
 CREATE UNIQUE INDEX users_email_uindex ON public.users (email);
 
-INSERT INTO users (id,name, email, password, role, token)
-VALUES (1, 'yonay', 'yonaycl@gmail.com' , 'c068fb95b8e64b1d775313ed5902efbe32d207e4de7876f8caf838fec6f8d18a', 'admin', 'fdb2f99d23dcd2e4b090dc0005f958b0c59746b60ad99d2c51ade655ea8806e2');
+INSERT INTO users (name, email, password, role, token)
+VALUES ('yonay', 'yonaycl@gmail.com' , 'c068fb95b8e64b1d775313ed5902efbe32d207e4de7876f8caf838fec6f8d18a', 'admin', 'fdb2f99d23dcd2e4b090dc0005f958b0c59746b60ad99d2c51ade655ea8806e2');
 
-INSERT INTO users (id,name, email, password, role, token)
-VALUES (2, 'jose', 'jose@gmail.com' , 'd705cb47bfe5ea17a25090bc63af957bc52298b4aedfe0f21ecbd67fe643ac8b', 'admin', '21fd1fc86f90c9a76abd0fb67ac6d86288c3c5239e98bbb00ffccebbaf150ff1');
+INSERT INTO users (name, email, password, role, token)
+VALUES ('jose', 'jose@gmail.com' , 'd705cb47bfe5ea17a25090bc63af957bc52298b4aedfe0f21ecbd67fe643ac8b', 'admin', '21fd1fc86f90c9a76abd0fb67ac6d86288c3c5239e98bbb00ffccebbaf150ff1');

@@ -19,7 +19,7 @@ public class CreateUser {
     }
 
     public void execute(UserDTO userDTO) {
-        if(!userDTO.getPassword().equals("") || !userDTO.getEmail().equals("")) {
+        if(!userDTO.getPassword().equals("") && !userDTO.getEmail().equals("")) {
             String hashPassword = hashPassword(userDTO.getPassword());
             userDTO.setPassword(hashPassword);
             generateKey(userDTO);

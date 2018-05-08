@@ -18,7 +18,7 @@ public class LogUser {
     }
 
     public String execute(LoginDTO logDTO) {
-        if(!logDTO.getPassword().equals("") || !logDTO.getEmail().equals("")) {
+        if(!logDTO.getPassword().equals("") && !logDTO.getEmail().equals("")) {
             logDTO.setPassword(hashPassword(logDTO.getPassword()));
             return userRepository.verifySession(logDTO);
         }

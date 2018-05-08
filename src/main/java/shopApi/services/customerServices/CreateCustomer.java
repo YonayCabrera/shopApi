@@ -15,7 +15,8 @@ public class CreateCustomer {
     }
 
     public void execute(CustomerDTO customerDTO) {
-        if(!customerDTO.getName().equals("") || !customerDTO.getSurname().equals("")) {
+        if(!customerDTO.getName().equals("") && !customerDTO.getSurname().equals("")
+                && !customerDTO.getImage().equals("")) {
             customerRepository.save(customerDTO);
         }
     }
