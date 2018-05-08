@@ -29,6 +29,7 @@ With this token you can create more admins or users
 ### HOW TO CREATE, UPDATE, DELETE or GET USERS ONLY WITH ADMIN TOKEN
 
 ##### Here the rules
+
 - The User have id, name, password, email, role, token
 - The email and password are required, if you dont send any role
 this user can´t access to any query of customer or users
@@ -44,24 +45,30 @@ Here you can list all users with this query
 
 #### GET ALL USERS
 
-###### GET /users?token=admin-token
+- ###### GET /users?token=admin-token
 
 #### CREATE ONE USER
 
-###### POST /createUser?token=admin-token
+- ###### POST /createUser?token=admin-token
+
 Here you need to send the data in the body
+
 ![alt text](https://i.gyazo.com/8bd164a6dacb1f0697f11fd4c229567b.png)
 
 #### UPDATE ONE USER
 
-###### PUT /users/id-of-user?token=admin-token
+- ###### PUT /users/id-of-user?token=admin-token
 
 You need to put id param and send request body like this:
+
 ![alt_text](https://i.gyazo.com/9df4418a9b6b7e964c8a63f91e56651c.png)
+
 
 ![alt_text](https://i.gyazo.com/39bc02c341a06ec56ad5331a054f74a2.png)
 
-###### DELETE /users/id-of-user?token=admin-token
+#### DELETE ONE USER
+
+- ###### DELETE /users/id-of-user?token=admin-token
 You need to put id param
 ![alt_text](https://i.gyazo.com/3b3dad53e6cffe6c763098fa5cfb9e14.png)
 
