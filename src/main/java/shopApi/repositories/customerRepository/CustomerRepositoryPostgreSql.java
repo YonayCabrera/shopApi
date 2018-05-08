@@ -51,12 +51,14 @@ public class CustomerRepositoryPostgreSql implements CustomerRepository {
 
     @Override
     public void update(int customerId, CustomerDTO newCustomer) {
-        final String query = "UPDATE customers SET name = :name, surname = :surname, image = :image WHERE id =:id";
+        final String query = "UPDATE customers SET name = :name, surname = :surname, " +
+                "image = :image, lastChange = :lastChange  WHERE id =:id";
         try (Connection connection = sql2o.open()) {
             connection.createQuery(query)
                     .addParameter("name", newCustomer.getName())
                     .addParameter("surname", newCustomer.getSurname())
                     .addParameter("image", newCustomer.getImage())
+                    .addParameter("lastChange", newCustomer.getLastModification())
                     .addParameter("id", customerId).executeUpdate();
         }
     }

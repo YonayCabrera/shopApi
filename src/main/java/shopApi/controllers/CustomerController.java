@@ -60,6 +60,7 @@ public class CustomerController {
         if (user.getRole().equals(Roles.USER.toString()) ||
                 user.getRole().equals(Roles.ADMIN.toString())) {
 
+            customerDTO.setLastModification(user.getEmail());
             updateCustomer.execute(id, customerDTO);
         }
     }

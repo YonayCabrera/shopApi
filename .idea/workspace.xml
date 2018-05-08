@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e60221ac-ddfb-48fe-ba1a-97094b551d2e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/57b40e57-c2cb-44ae-a94c-3c2e99f5448f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/57b40e57-c2cb-44ae-a94c-3c2e99f5448f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/57b40e57-c2cb-44ae-a94c-3c2e99f5448f/storage_v2/_src_/database/shoptheam.JwO-gw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/57b40e57-c2cb-44ae-a94c-3c2e99f5448f/storage_v2/_src_/database/shoptheam.JwO-gw/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/docker/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/init.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/domain/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/domain/CustomerDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/shopApi/repositories/customerRepository/CustomerRepositoryPostgreSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopApi/repositories/customerRepository/CustomerRepositoryPostgreSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/repositories/CustomerRepository/CustomerRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/repositories/CustomerRepository/CustomerRepositoryShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/CreateCustomerShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/CreateCustomerShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/DeleteCustomerShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/DeleteCustomerShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/UpdateCustomerShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/UpdateCustomerShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,8 +83,8 @@
       <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="47" column="71" lean-forward="true" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+            <state relative-caret-position="237">
+              <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,14 +92,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UpdateCustomer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/UpdateCustomer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/customerRepository/CustomerRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerRepositoryPostgreSql.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/customerRepository/CustomerRepositoryPostgreSql.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="60" column="81" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="503">
-              <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+              <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
               <folding>
                 <element signature="e#1340#1341#0" expanded="true" />
                 <element signature="e#1423#1424#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/CustomerDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding>
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#890#891#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
+                <element signature="e#1102#1103#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,10 +226,10 @@
         <option value="$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/repositories/CustomerRepository/CustomerRepositoryShould.java" />
         <option value="$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/UpdateCustomerShould.java" />
-        <option value="$PROJECT_DIR$/src/main/java/shopApi/repositories/customerRepository/CustomerRepositoryPostgreSql.java" />
         <option value="$PROJECT_DIR$/src/main/docker/init.sql" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/domain/CustomerDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/shopApi/repositories/customerRepository/CustomerRepositoryPostgreSql.java" />
       </list>
     </option>
   </component>
@@ -222,7 +257,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -721,7 +756,7 @@
       <workItem from="1525707547548" duration="47000" />
       <workItem from="1525707633155" duration="43000" />
       <workItem from="1525716809712" duration="9304000" />
-      <workItem from="1525771217204" duration="2618000" />
+      <workItem from="1525771217204" duration="2955000" />
     </task>
     <servers />
   </component>
@@ -758,7 +793,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85650000" />
+    <option name="totallyTimeSpent" value="85987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
@@ -781,11 +816,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2599432" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2599432" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2911932" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49788135" visible="true" weight="0.29758713" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49788135" visible="true" weight="0.29758713" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -845,13 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/UpdateCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" column="58" lean-forward="true" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1118,20 +1146,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/customerRepository/CustomerRepositoryPostgreSql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/customerRepository/CustomerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/docker/init.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1146,22 +1160,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/CustomerDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="47" column="62" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
-          <folding>
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/shopApi/services/customerServices/CreateCustomerShould.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1169,24 +1167,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+          <folding>
+            <element signature="e#1340#1341#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/CustomerDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/controllers/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="47" column="71" lean-forward="true" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+        <state relative-caret-position="237">
+          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/domain/Customer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/services/customerServices/UpdateCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
-          <folding>
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="352">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/customerRepository/CustomerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shopApi/repositories/customerRepository/CustomerRepositoryPostgreSql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="60" column="81" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="81" />
         </state>
       </provider>
     </entry>
