@@ -18,8 +18,11 @@ public class LogUser {
     }
 
     public String execute(LoginDTO logDTO) {
-        logDTO.setPassword(hashPassword(logDTO.getPassword()));
-        return userRepository.verifySession(logDTO);
+        if(!logDTO.getPassword().equals("") || !logDTO.getEmail().equals("")) {
+            logDTO.setPassword(hashPassword(logDTO.getPassword()));
+            return userRepository.verifySession(logDTO);
+        }
+        return "Try again";
     }
 
     private String hashPassword(String password) {

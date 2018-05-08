@@ -18,6 +18,10 @@ public class LoginController {
     @ResponseBody
     @PostMapping("/login")
     public String login(@RequestBody LoginDTO loginDTO){
-        return "Your Key is " + logUser.execute(loginDTO);
+        String verifyAccount = logUser.execute(loginDTO);
+        if(verifyAccount.equals("Try again")){
+            return "Try again";
+        }
+        return "Your Token is " + verifyAccount;
     }
 }

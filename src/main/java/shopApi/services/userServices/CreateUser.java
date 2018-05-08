@@ -19,11 +19,13 @@ public class CreateUser {
     }
 
     public void execute(UserDTO userDTO) {
-        String hashPassword = hashPassword(userDTO.getPassword());
-        userDTO.setPassword(hashPassword);
-        generateKey(userDTO);
+        if(!userDTO.getPassword().equals("") || !userDTO.getEmail().equals("")) {
+            String hashPassword = hashPassword(userDTO.getPassword());
+            userDTO.setPassword(hashPassword);
+            generateKey(userDTO);
 
-        userRepository.save(userDTO);
+            userRepository.save(userDTO);
+        }
     }
 
 

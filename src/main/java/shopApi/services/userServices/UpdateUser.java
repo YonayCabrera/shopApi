@@ -21,10 +21,12 @@ public class UpdateUser {
     }
 
     public void execute(int userId, UserDTO userDTO) {
-        String hashPassword = hashPassword(userDTO.getPassword());
-        userDTO.setPassword(hashPassword);
+        if(!userDTO.getPassword().equals("") || !userDTO.getEmail().equals("")) {
+            String hashPassword = hashPassword(userDTO.getPassword());
+            userDTO.setPassword(hashPassword);
 
-        userRepository.updateUser(userId,userDTO);
+            userRepository.updateUser(userId, userDTO);
+        }
     }
 
 }
