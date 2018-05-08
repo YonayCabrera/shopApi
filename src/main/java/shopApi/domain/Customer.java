@@ -8,13 +8,15 @@ public class Customer {
     private final String surname;
     private final String image;
     private String lastChange;
+    private String createdBy;
 
-    public Customer(int id, String name, String surname, String image, String lastChange) {
+    public Customer(int id, String name, String surname, String image, String lastChange, String createdBy) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.image = image;
         this.lastChange = lastChange;
+        this.createdBy = createdBy;
     }
 
     public String getName() {
@@ -51,6 +53,6 @@ public class Customer {
     }
 
     public CustomerDTO toDTO() {
-        return new CustomerDTO(id,name,surname,image,lastChange);
+        return new CustomerDTO(id,name,surname,image,lastChange, createdBy);
     }
 }

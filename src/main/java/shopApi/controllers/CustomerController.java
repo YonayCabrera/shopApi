@@ -45,7 +45,6 @@ public class CustomerController {
 
         if ((user.getRole().equals(Roles.USER.toString()) ||
                 user.getRole().equals(Roles.ADMIN.toString()))) {
-
             return getAllCustomers.execute().stream().map(Customer::toDTO).collect(Collectors.toList());
         }
         return null;
@@ -99,6 +98,8 @@ public class CustomerController {
 
         if (user.getRole().equals(Roles.USER.toString()) ||
                 user.getRole().equals(Roles.ADMIN.toString())) {
+            customerDTO.setCreatedBy(user.getEmail());
+            customerDTO.setLastModification(user.getEmail());
             createCustomer.execute(customerDTO);
         }
     }

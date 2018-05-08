@@ -29,13 +29,15 @@ public class CustomerRepositoryPostgreSql implements CustomerRepository {
 
     @Override
     public void save(CustomerDTO customerDTO) {
-        final String query = "INSERT INTO customers(name, surname, image)" +
-                " VALUES (:name, :surname, :image)";
+        final String query = "INSERT INTO customers(name, surname, image, lastChange, createdBy)" +
+                " VALUES (:name, :surname, :image, :lastChange, :createdBy)";
         try (Connection connection = sql2o.open()) {
             connection.createQuery(query)
                     .addParameter("name", customerDTO.getName())
                     .addParameter("surname", customerDTO.getSurname())
-                    .addParameter("image", customerDTO.getImage()).executeUpdate();
+                    .addParameter("image", customerDTO.getImage())
+                    .addParameter("lastChange",customerDTO.getLastModification())
+                    .addParameter("createdBy",customerDTO.getCreatedBy()).executeUpdate();
         }
     }
 

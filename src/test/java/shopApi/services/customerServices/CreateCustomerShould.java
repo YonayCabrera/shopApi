@@ -26,7 +26,8 @@ public class CreateCustomerShould {
                 "yonay",
                 "cabrera",
                 "image.jpg",
-                "yonay");
+                "yonay",
+                "yonaycl@gmail.com");
 
         createCustomer.execute(customerDTO);
 
