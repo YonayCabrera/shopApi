@@ -1,6 +1,5 @@
 package shopApi.repositories.UserRepository;
 
-import com.google.common.hash.Hashing;
 import org.junit.Before;
 import org.junit.Test;
 import org.sql2o.Connection;
@@ -12,12 +11,12 @@ import shopApi.domain.UserDTO;
 import shopApi.repositories.BaseRepositoryShould;
 import shopApi.repositories.userRepository.UserRepositoryPostgreSql;
 
-import java.nio.charset.StandardCharsets;
 import java.util.Date;
 import java.util.List;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
 import static org.codehaus.groovy.runtime.InvokerHelper.asList;
+import static shopApi.domain.Tools.hashPassword;
 
 public class UserRepositoryShould extends BaseRepositoryShould {
     @Override
@@ -168,9 +167,4 @@ public class UserRepositoryShould extends BaseRepositoryShould {
         userDTO.setToken(hashPassword(String.valueOf(new Date().getTime())));
     }
 
-    private String hashPassword(String password) {
-        return Hashing.sha256()
-                .hashString(password, StandardCharsets.UTF_8)
-                .toString();
-    }
 }

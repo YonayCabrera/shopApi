@@ -110,11 +110,13 @@ public class CustomerRepositoryShould extends BaseRepositoryShould {
 
     private void insertCustomer(CustomerDTO customerDTO) {
         try (Connection connection = this.connection.open()) {
-            connection.createQuery("INSERT INTO customers(name, surname, image)" +
-                    " VALUES (:name, :surname, :image)")
+            connection.createQuery("INSERT INTO customers(name, surname, image, lastChange, createdBy)" +
+                    " VALUES (:name, :surname, :image, :lastChange, :createdBy)")
                     .addParameter("name", customerDTO.getName())
                     .addParameter("surname", customerDTO.getSurname())
-                    .addParameter("image", customerDTO.getImage()).executeUpdate();
+                    .addParameter("image", customerDTO.getImage())
+                    .addParameter("lastChange",customerDTO.getLastModification())
+                    .addParameter("createdBy", customerDTO.getCreatedBy()).executeUpdate();
         }
     }
 

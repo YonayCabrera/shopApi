@@ -8,6 +8,8 @@ import shopApi.repositories.userRepository.UserRepository;
 
 import java.nio.charset.StandardCharsets;
 
+import static shopApi.domain.Tools.hashPassword;
+
 @Service
 public class UpdateUser {
     private UserRepository userRepository;
@@ -19,15 +21,10 @@ public class UpdateUser {
     }
 
     public void execute(int userId, UserDTO userDTO) {
-        String hashPassword = HashPassword(userDTO);
+        String hashPassword = hashPassword(userDTO.getPassword());
         userDTO.setPassword(hashPassword);
 
         userRepository.updateUser(userId,userDTO);
     }
 
-    private String HashPassword(UserDTO userDTO) {
-        return Hashing.sha256()
-                .hashString(userDTO.getPassword(), StandardCharsets.UTF_8)
-                .toString();
-    }
 }
